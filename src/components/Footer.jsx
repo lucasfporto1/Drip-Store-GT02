@@ -2,7 +2,7 @@ import logoBranca from "../assets/logo-branca.png";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#1F1F1F] text-white flex justify-center py-12">
+    <footer className="bg-[#1F1F1F] text-white flex justify-center py-12 position-absolute">
       <div className="w-[92%] flex flex-col items-center">
         <div className="flex flex-col gap-6">
           <div className="flex flex-col gap-4">

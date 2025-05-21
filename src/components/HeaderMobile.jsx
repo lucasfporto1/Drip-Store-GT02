@@ -2,7 +2,7 @@ import logo from "../assets/logo.png";
 
 export default function Header() {
   return (
-    <header className="flex justify-center p-5">
+    <header className="flex justify-center p-5 position-absolute">
     <div className="flex justify-between items-center w-[99%] gap-5">
       
       {/* Ícone hamburguer visível só no mobile */}
@@ -11,12 +11,6 @@ export default function Header() {
       {/* Logo */}
       <img className="w-36 ml-8" src={logo} alt="logo-digital-store" />
   
-      {/* Menu de navegação visível a partir do md */}
-      <nav className="hidden md:flex gap-6 text-gray-700 font-semibold">
-        <a href="#">Produtos</a>
-        <a href="#">Categorias</a>
-        <a href="#">Meu Perfil</a>
-      </nav>
   
       {/* Ícones de busca e carrinho */}
       <div className="flex items-center gap-4">

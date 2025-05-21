@@ -16,35 +16,67 @@ export default function ProdutosPage() {
     {
       id: 2,
       name: "Tênis Nike Air Max - Feminino",
-      price: 150,
-      originalPrice: 250,
-      discount: 40,
+      price: 100,
+      originalPrice: 200,
+      discount: 30,
       imageUrl: tenis,
     },
     {
       id: 3,
       name: "Tênis Nike Air Max - Feminino",
-      price: 150,
-      originalPrice: 250,
-      discount: 40,
+      price: 100,
+      originalPrice: 200,
+      discount: 30,
       imageUrl: tenis,
     },
     {
       id: 4,
       name: "Tênis Nike Air Max - Feminino",
-      price: 150,
-      originalPrice: 250,
-      discount: 40,
+      price: 100,
+      originalPrice: 200,
+      discount: 30,
       imageUrl: tenis,
     },
+    {
+      id: 5,
+      name: "Tênis Nike Air Max - Feminino",
+      price: 100,
+      originalPrice: 200,
+      discount: 30,
+      imageUrl: tenis,
+    },
+    {
+      id: 6,
+      name: "Tênis Nike Air Max - Feminino",
+      price: 100,
+      originalPrice: 200,
+      discount: 30,
+      imageUrl: tenis,
+    },
+    {
+      id: 7,
+      name: "Tênis Nike Air Max - Feminino",
+      price: 100,
+      originalPrice: 200,
+      discount: 30,
+      imageUrl: tenis,
+    },
+    {
+      id: 8,
+      name: "Tênis Nike Air Max - Feminino",
+      price: 100,
+      originalPrice: 200,
+      discount: 30,
+      imageUrl: tenis,
+    }
   ];
 
   return (
     <LayoutWrapper>
-      <ModalMeuCarrinho/>
+      <ModalMeuCarrinho />
       <section className="px-4 py-6 bg-[#f9f8fe]">
         <div className="flex justify-between items-center mb-4 gap-2">
-          <div className="flex items-center justify-between border border-[#474747] rounded bg-white h-14 px-5 py-3 w-fit text-sm text-[#474747]">
+          <div className="flex items-center justify-between  border border-[#474747] rounded bg-white h-14 px-5 py-3 w-fit text-sm text-[#474747]  ">
             <span className="font-bold mr-1">Ordenar por:</span>
             <span className="text-[#8f8f8f] mr-2">mais relevantes</span>
             <svg
@@ -65,7 +97,7 @@ export default function ProdutosPage() {
 
           <button
             id="openFilter"
-            className="bg-[#c92071] hover:bg-pink-700 w-14 h-14 mr-2 flex items-center justify-center rounded-md"
+            className="bg-[#c92071] hover:bg-pink-700 w-14 h-14 mr-2 flex items-center justify-center rounded-md md:hidden"
           >
             <img src={filterIcon} alt="Filtro" />
           </button>
@@ -76,7 +108,7 @@ export default function ProdutosPage() {
           <p className="text-[#474747] font-semibold">389 produtos</p>
         </div>
 
-        <aside className="fixed top-[65px] left-0 w-60 h-[calc(100vh-65px)] bg-white shadow-lg shadow-black/20 px-4 py-6 border-r text-sm z-50 hidden">
+        <aside className="fixed top-[65px] left-0 w-60 h-[calc(100vh-65px)] bg-white shadow-lg shadow-black/20 px-4 py-6 border-r text-sm z-50 overflow-y-auto 0 hidden">
           <div className="flex justify-between items-center mb-4">
             <h2 className="text-base font-semibold text-gray-800">
               Filtrar por
