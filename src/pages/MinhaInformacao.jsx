@@ -1,3 +1,6 @@
+
+import tenisvermelho from '../assets/imagens/tenisvermelho.png';
+
 export default function MinhaInformacao() {
 
   return (
@@ -39,7 +42,7 @@ export default function MinhaInformacao() {
           {/* Pedido 1 */}
           <div className="whitespace-nowrap flex flex-col lg:flex-row justify-between items-start border-b-2 border-gray-200 py-4 gap-4">
             <div className="flex items-start gap-4">
-              {/* <img src="assets/tenisvermelho.png" alt="Tênis" className="w-16 h-16 object-cover rounded bg-blue-100" /> */}
+              <img src={tenisvermelho} alt="Tênis" className="w-16 h-16 object-cover rounded bg-blue-100" />
               <div>
                 <p className="text-sm text-gray-500">Pedido nº 2234981932</p>
                 <p className="font-semibold text-gray-800">Tênis Nike Revolution 6 Next Nature Masculino</p>
@@ -54,7 +57,7 @@ export default function MinhaInformacao() {
           {/* Pedido 2 */}
           <div className="whitespace-nowrap flex flex-col lg:flex-row justify-between items-start border-b-2 border-gray-200 py-4 gap-4">
             <div className="flex items-start gap-4">
-              {/* <img src="assets/tenisvermelho.png" alt="Tênis" className="w-16 h-16 object-cover rounded bg-blue-100" /> */}
+              <img src={tenisvermelho} alt="Tênis" className="w-16 h-16 object-cover rounded bg-blue-100" />
               <div>
                 <p className="text-sm text-gray-500">Pedido nº 2234981932</p>
                 <p className="font-semibold text-gray-800">Tênis Nike Revolution 6 Next Nature Masculino</p>
@@ -69,7 +72,7 @@ export default function MinhaInformacao() {
           {/* Pedido 3 */}
           <div className="whitespace-nowrap flex flex-col lg:flex-row justify-between items-start border-b-2 border-gray-200 py-4 gap-4">
             <div className="flex items-start gap-4">
-              {/* <img src="assets/tenisvermelho.png" alt="Tênis" className="w-16 h-16 object-cover rounded bg-blue-100" /> */}
+              <img src={tenisvermelho} alt="Tênis" className="w-16 h-16 object-cover rounded bg-blue-100" />
               <div>
                 <p className="text-sm text-gray-500">Pedido nº 2234981932</p>
                 <p className="font-semibold text-gray-800">Tênis Nike Revolution 6 Next Nature Masculino</p>
@@ -84,7 +87,7 @@ export default function MinhaInformacao() {
           {/* Pedido 4 */}
           <div className="whitespace-nowrap flex flex-col lg:flex-row justify-between items-start border-b-2 border-gray-200 py-4 gap-4">
             <div className="flex items-start gap-4">
-              {/* <img src="assets/tenisvermelho.png" alt="Tênis" className="w-16 h-16 object-cover rounded bg-blue-100" /> */}
+              <img src={tenisvermelho} alt="Tênis" className="w-16 h-16 object-cover rounded bg-blue-100" />
               <div>
                 <p className="text-sm text-gray-500">Pedido nº 2234981932</p>
                 <p className="font-semibold text-gray-800">Tênis Nike Revolution 6 Next Nature Masculino</p>
@@ -99,7 +102,7 @@ export default function MinhaInformacao() {
           {/* Pedido 5 */}
           <div className="whitespace-nowrap flex flex-col lg:flex-row justify-between items-start border-b-2 border-gray-200 py-4 gap-4">
             <div className="flex items-start gap-4">
-              {/* <img src="assets/tenisvermelho.png" alt="Tênis" className="w-16 h-16 object-cover rounded bg-blue-100" /> */}
+              <img src={tenisvermelho} alt="Tênis" className="w-16 h-16 object-cover rounded bg-blue-100" />
               <div>
                 <p className="text-sm text-gray-500">Pedido nº 2234981932</p>
                 <p className="font-semibold text-gray-800">Tênis Nike Revolution 6 Next Nature Masculino</p>

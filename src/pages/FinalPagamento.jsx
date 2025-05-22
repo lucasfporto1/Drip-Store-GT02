@@ -11,7 +11,7 @@ return(
   <div className="bg-white w-full max-w-3xl rounded-lg shadow-md p-6 sm:p-10">
     {/* <!-- Ícone e título --> */}
     <div className="flex flex-col items-center">
-   <img src={Popper} alt="Popper" class="w-16 h-16 mb-2" />
+   <img src={Popper} alt="Popper" className="w-16 h-16 mb-2" />
       <h1 className="text-2xl font-bold text-gray-900 text-center">Compra Realizada<br/>com sucesso!</h1>
     </div>
 
@@ -51,7 +51,7 @@ return(
       <p className="font-semibold mb-2">Resumo da compra</p>
       <div className="border-t border-gray-300 pt-4">
         <div className="flex items-center gap-4">
-          <img src={tenisvermelho} alt="Produto" class="w-14 h-14 object-cover rounded" />
+          <img src={tenisvermelho} alt="Produto" className="w-14 h-14 object-cover rounded" />
           <div>
             <p className="font-medium">Tênis Nike Revolution 6 Next Nature Masculino</p>
           </div>
