@@ -2,7 +2,7 @@ import tenis from "../assets/tenis.png";
 
 export default function ModalMeuCarrinho() {
   return (
-    <div className="w-72 p-4 bg-white rounded-lg shadow-md border rounded ml-12 pb-3 hidden">
+    <div className="w-72 p-4 bg-white rounded-lg shadow-md border ml-12 pb-3 hidden">
       <h1 className="text-[#474747] text-lg font-semibold mb-4">
         Meu Carrinho
       </h1>
