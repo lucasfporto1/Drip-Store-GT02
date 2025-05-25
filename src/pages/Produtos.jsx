@@ -86,6 +86,7 @@ export default function ProdutosPage() {
               <h2 className="font-bold mb-4 text-base text-gray-800">
                 Filtrar por
               </h2>
+              <hr className="text-[#CCCCCC] mb-5"/>
               {/* Filtros */}
               <div className="space-y-5">
                 {[
@@ -154,34 +155,41 @@ export default function ProdutosPage() {
             {/* Grid de produtos */}
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 flex-1">
               {tenisList.map((item, index) => (
-                <div
-                  key={index}
-                  className="bg-white rounded-lg p-4 shadow-sm relative cursor-pointer"
-                >
-                  {/* Badge de desconto */}
-                  {index < 2 && (
-                    <span className="absolute top-3 left-3 bg-[#E7FF86] text-[#474747] text-xs font-bold px-2 py-1 rounded-full">
-                      {item.discount}% OFF
-                    </span>
-                  )}
+                <div key={index} className="cursor-pointer">
+                  {/* Card da imagem + badge */}
+                  <div className="bg-white p-4 shadow-sm relative">
+                    {/* Badge de desconto */}
+                    {index < 2 && (
+                      <span className="absolute top-3 left-3 bg-[#E7FF86] text-[#474747] text-xs font-bold px-2 py-1 rounded-full">
+                        {item.discount}% OFF
+                      </span>
+                    )}
 
-                  <img
-                    src={item.imageUrl}
-                    alt={item.name}
-                    className="mx-auto mb-4 w-full max-w-[180px]"
-                  />
-                  <p className="text-[#8F8F8F] text-sm font-semibold">Tênis</p>
-                  <p className="text-[#474747] font-semibold text-sm leading-tight">
-                    {item.name}
-                  </p>
-                  <p className="text-base mt-1">
-                    <span className="line-through text-[#8f8f8f] mr-2">
-                      {item.originalPrice}
-                    </span>
-                    <span className="text-[#1f1f1f] font-bold">
-                      {item.price}
-                    </span>
-                  </p>
+                    {/* Imagem */}
+                    <img
+                      src={item.imageUrl}
+                      alt={item.name}
+                      className="mx-auto mb-4 w-full"
+                    />
+                  </div>
+
+                  {/* Informações do produto (fora da moldura) */}
+                  <div className="mt-2 px-1">
+                    <p className="text-[#8F8F8F] text-sm font-semibold">
+                      Tênis
+                    </p>
+                    <p className="text-[#474747] font-semibold text-sm leading-tight">
+                      {item.name}
+                    </p>
+                    <p className="text-base mt-1">
+                      <span className="line-through text-[#8f8f8f] mr-2">
+                        {item.originalPrice}
+                      </span>
+                      <span className="text-[#1f1f1f] font-bold">
+                        {item.price}
+                      </span>
+                    </p>
+                  </div>
                 </div>
               ))}
             </div>
