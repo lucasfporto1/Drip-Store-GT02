@@ -1,7 +1,6 @@
 import React from "react";
-import { FaFacebook } from "react-icons/fa";
 
-export default function LoginPage() {
+export default function CadastroCriarConta() {
   return (
     <section>
       <div className="flex flex-col justify-center items-center w-full gap-4 pt-15 pb-20 bg-gradient-to-b from-[#B5B6F2] to-[#EFEFFF] md:flex-row">
@@ -9,11 +8,11 @@ export default function LoginPage() {
         <div className="bg-white rounded-md shadow-md p-6 w-[80%] md:w-3/5 xl:w-2/4">
           <div className="flex flex-col items-center mb-5 lg:items-start">
             <h1 className="font-bold text-[22px] font-[Inter]">
-              Acesse sua conta
+              Crie sua conta
             </h1>
             <div className="flex flex-row gap-1 text-warp">
               <h3>
-                Novo cliente? Então registre-se{" "}
+                Já possui conta? Entre{" "}
                 <a className="hover:underline" href="#">
                   aqui.
                 </a>
@@ -23,62 +22,34 @@ export default function LoginPage() {
 
           {/* Formulário */}
           <form>
-            {/* Login */}
             <div className="flex flex-col">
               <label
-                htmlFor="nome"
+                htmlFor="email"
                 className="font-[Inter] text-[12px] text-gray-700 font-medium"
               >
-                Login*
+                Email *
               </label>
               <input
-                type="text"
-                id="nome"
-                placeholder="Insira seu login"
-                className="border-2 border-gray-100 bg-gray-100 rounded-md p-2 focus:outline-none mb-3"
-              />
-            </div>
-
-            {/* Senha */}
-            <div className="flex flex-col">
-              <label
-                htmlFor="password"
-                className="font-[Inter] text-[12px] text-gray-700 font-medium"
-              >
-                Senha*
-              </label>
-              <input
-                type="password"
-                id="password"
-                placeholder="Insira sua senha"
+                type="email"
+                id="email"
+                placeholder="Insira seu email"
                 className="border-2 border-gray-100 bg-gray-100 rounded-md p-2 focus:outline-none"
               />
-            </div>
-
-            <div className="flex flex-col items-start">
-              <a
-                className="font-[Inter] text-[14px] mb-3 mt-5 underline"
-                href="#"
-              >
-                Esqueci minha senha
-              </a>
             </div>
 
             <button
               className="flex text-white text-[16px] border-2 bg-[#C92071] rounded-xl w-full justify-center hover:bg-[#991956] p-3 mt-6 cursor-pointer"
               type="submit"
             >
-              Acessar Conta
+              Criar Conta
             </button>
           </form>
 
-          <div className="flex flex-col items-center md:flex-row md:justify-center">
-            <div className="flex flex-col items-start">
-              <p className="font-[Inter] text-[14px] mb-3 mt-5 mr-2">
-                Ou faça login com
-              </p>
-            </div>
-            <div className="flex flex-row items-center space-x-4">
+          <div className="flex flex-col items-center">
+            <p className="font-[Inter] text-[14px] mb-3 mt-5">
+              Ou faça login com
+            </p>
+            <div className="flex items-center space-x-4">
               {/* Ícone do Gmail */}
               <a href="API GMAIL">
                 <img
@@ -89,7 +60,6 @@ export default function LoginPage() {
               </a>
 
               {/* Ícone do Facebook */}
-              <FaFacebook className="text-blue-600 text-3xl" />
             </div>
           </div>
         </div>

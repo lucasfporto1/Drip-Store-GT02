@@ -5,7 +5,7 @@ export default function MinhasInformacoes() {
     <div className="bg-[#f9f8fe] min-h-screen flex items-center justify-center">
       <div className="container mx-auto p-4 flex flex-col md:flex-row gap-6">
         {/* Menu lateral */}
-        <aside className="bg-white w-full md:w-1/4 p-4 border rounded hidden md:block">
+        <aside className="bg-white w-full md:w-1/4 p-4 rounded hidden md:block">
           <ul className="space-y-4">
             <li className="text-gray-700 cursor-pointer border-l-4 border-transparent pl-2 hover:border-pink-600 hover:text-pink-600">
               Meu Perfil
@@ -23,7 +23,7 @@ export default function MinhasInformacoes() {
         </aside>
 
         {/* Conteúdo principal */}
-        <main className="bg-white w-full md:w-3/4 p-6 border rounded space-y-6">
+        <main className="bg-white w-full md:w-3/4 p-6 rounded space-y-6">
           <div className="flex justify-between items-center border-b pb-2">
             <h2 className="text-gray-700 font-semibold">Minhas Informações</h2>
             <a href="#" className="text-pink-600 text-sm hover:underline">
