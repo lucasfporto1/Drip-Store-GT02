@@ -27,10 +27,10 @@ export default function HeaderDesktop() {
           <a href="#" className="text-sm underline">
             Cadastre-se
           </a>
-          <button className="bg-pink-600 text-white px-6 py-2 rounded text-sm hover:text-pink-600 hover:bg-white transition duration-300">
+          <button className="bg-pink-600 text-white px-6 py-2 rounded text-sm hover:text-pink-600 hover:bg-white transition duration-300 cursor-pointer">
             Entrar
           </button>
-          <i className="fa-solid fa-cart-shopping text-xl text-pink-600"></i>
+          <i className="fa-solid fa-cart-shopping text-xl text-pink-600 cursor-pointer"></i>
         </div>
       </div>
 

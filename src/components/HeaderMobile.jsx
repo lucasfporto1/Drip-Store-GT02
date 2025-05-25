@@ -2,7 +2,7 @@ import logo from "../assets/logo.png";
 
 export default function Header() {
   return (
-    <header className="flex justify-center p-5 position-absolute">
+    <header className="flex justify-center p-5 z-30 relative">
     <div className="flex justify-between items-center w-[99%] gap-5">
       
       {/* Ícone hamburguer visível só no mobile */}
