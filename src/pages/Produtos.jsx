@@ -11,7 +11,7 @@ export default function ProdutosPage() {
     setMostrarFiltro(!mostrarFiltro);
   };
 
-  const tenisList = new Array(15).fill({
+  const tenisList = new Array(16).fill({
     name: "Tênis Nike Air Max - Feminino",
     price: "$100",
     originalPrice: "$200",

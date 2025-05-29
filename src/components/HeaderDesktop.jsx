@@ -2,41 +2,41 @@ import Logo from "../assets/logo.png";
 
 export default function HeaderDesktop() {
   return (
-    <header className="border-b shadow-sm bg-white text-gray-800 w-full">
+    <header className="shadow-lg bg-white text-gray-800 w-full">
       {/* Linha superior */}
-      <div className="container mx-auto flex items-center justify-between px-4 py-4 gap-4">
+      <div className="w-full px-8 xl:px-16 flex items-center justify-between py-6 gap-6">
         {/* Logo */}
-        <div className="flex-shrink-0 text-pink-600 font-bold text-xl">
-          <img src={Logo} alt="Logo" className="w-36" />
+        <div className="flex-shrink-0 text-pink-600 font-bold text-2xl">
+          <img src={Logo} alt="Logo" className="w-40" />
         </div>
 
         {/* Campo de busca */}
-        <div className="flex-grow max-w-[600px] mx-4 hidden md:flex">
+        <div className="flex-grow max-w-[600px] mx-4 flex">
           <input
             type="text"
             placeholder="Tênis"
-            className="w-full rounded-l px-4 py-2 bg-[#f8f8f8] focus:outline-none text-sm"
+            className="w-full rounded-l px-4 py-3 bg-[#f8f8f8] focus:outline-none text-base"
           />
-          <button className="bg-[#f8f8f8] px-4 py-2 rounded-r">
+          <button className="bg-[#f8f8f8] px-4 py-3 rounded-r">
             <i className="fa-solid fa-magnifying-glass text-gray-500"></i>
           </button>
         </div>
 
         {/* Ações: cadastro, login, carrinho */}
-        <div className="flex items-center gap-4 flex-shrink-0">
-          <a href="#" className="text-sm underline">
+        <div className="flex items-center gap-6 flex-shrink-0">
+          <a href="#" className="text-base text-[#474747]">
             Cadastre-se
           </a>
-          <button className="bg-pink-600 text-white px-6 py-2 rounded text-sm hover:text-pink-600 hover:bg-white transition duration-300 cursor-pointer">
+          <button className="bg-[#c92071] text-white px-6 py-3 rounded text-base hover:text-pink-600 hover:bg-white transition duration-300 cursor-pointer">
             Entrar
           </button>
-          <i className="fa-solid fa-cart-shopping text-xl text-pink-600 cursor-pointer"></i>
+          <i className="fa-solid fa-cart-shopping text-2xl text-pink-600 cursor-pointer"></i>
         </div>
       </div>
 
       {/* Navegação */}
-      <nav className="container mx-auto px-4 pb-4">
-        <ul className="flex justify-left gap-6 text-sm">
+      <nav className="w-full px-8 xl:px-16 pb-4">
+        <ul className="flex justify-left gap-8 text-base">
           <li>
             <a href="#" className="hover:text-pink-600">
               Home
