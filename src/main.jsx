@@ -1,7 +1,8 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import App from "./App.jsx";
+import Produtos from "./pages/Produtos.jsx";
 import LoginPage from "./pages/LoginPage.jsx";
 import CadastroCriarConta from "./pages/CadastroCriarConta.jsx";
 import CadastroCompleto from "./pages/CadastroCompleto.jsx";
@@ -14,20 +15,14 @@ import HambuguerInformacao from './pages/HambuguerInformacao.jsx';
 import ConfiguracaoCompra from './pages/configuracaoCompra.jsx';
 
 
-
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById("root")).render(
   <StrictMode>
    <BrowserRouter>
-    <Routes>
-      {/* <Route path="/" element={<DetalheProd />} /> */}
-       {/* <Route path="/" element={<FinalPagamento />} /> */}
-       {/* <Route path="/" element={<MinhaInformacao />} /> */}
-       {/* <Route path="/" element={<HambuguerInformacao />} /> */}
-       <Route path="/" element={<ConfiguracaoCompra />} />
-
-
-
-    </Routes>
-  </BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/produtos" element={<Produtos />} />
+        <Route path="/" element={<ConfiguracaoCompra />} />
+      </Routes>
+    </BrowserRouter>
   </StrictMode>,
 )
