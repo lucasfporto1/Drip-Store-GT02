@@ -9,10 +9,10 @@ import CadastroCompleto from "./pages/CadastroCompleto.jsx";
 import MinhasInformacoes from "./pages/MinhaImformacoes.jsx";
 import { BrowserRouter, Routes, Route } from "react-router";
 import FinalPagamento from './pages/FinalPagamento.jsx';
-import myInformacao from './pages/MinhaInformacao.jsx';
 import MinhaInformacao from './pages/MinhaInformacao.jsx';
 import HambuguerInformacao from './pages/HambuguerInformacao.jsx';
 import ConfiguracaoCompra from './pages/configuracaoCompra.jsx';
+import DetalheProd from "./pages/detalheProd.jsx";
 
 
 createRoot(document.getElementById("root")).render(
@@ -21,7 +21,15 @@ createRoot(document.getElementById("root")).render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/produtos" element={<Produtos />} />
-        <Route path="/" element={<ConfiguracaoCompra />} />
+        <Route path="/configuracaoCompra" element={<ConfiguracaoCompra />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/cadastroCriarConta" element={<CadastroCriarConta />} />
+        <Route path="/cadastroCompleto" element={<CadastroCompleto />} />
+        <Route path="/minhasInformacoes" element={<MinhasInformacoes />} />
+        <Route path="/finalPagamento" element={<FinalPagamento />} />
+        <Route path="/minhainformacao" element={<MinhaInformacao />} />
+        <Route path="/hambuguerInformacao" element={<HambuguerInformacao />} />
+        <Route path="/detalhes" element={<DetalheProd />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,
