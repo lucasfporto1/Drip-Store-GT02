@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function MinhasInformacoes() {
   return (
@@ -11,7 +12,7 @@ export default function MinhasInformacoes() {
               Meu Perfil
             </li>
             <li className="text-gray-700 cursor-pointer border-l-4 border-transparent pl-2 hover:border-pink-600 hover:text-pink-600">
-              Meus Pedidos
+              <Link to="/meuspedidos">Meus Pedidos</Link>
             </li>
             <li className="text-gray-700 cursor-pointer border-l-4 border-transparent pl-2 hover:border-pink-600 hover:text-pink-600">
               Minhas Informações

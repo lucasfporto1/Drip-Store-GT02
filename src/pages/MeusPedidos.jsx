@@ -1,8 +1,6 @@
+import tenisvermelho from "../assets/imagens/tenisvermelho.png";
 
-import tenisvermelho from '../assets/imagens/tenisvermelho.png';
-
-export default function MinhaInformacao() {
-
+export default function MeusPedidos() {
   return (
     <main className="bg-gray-100 min-h-screen flex items-center justify-center p-4">
       <div className="flex flex-col lg:flex-row gap-10">
@@ -36,81 +34,133 @@ export default function MinhaInformacao() {
         <div className="w-full h-full max-w-[600px] rounded-lg shadow-md p-6 sm:p-10 bg-white">
           <div className="flex w-full flex-row gap-90 border-b-2 border-gray-200 whitespace-nowrap">
             <h2 className="text-lg font-semibold mb-4">Meus Pedidos</h2>
-            <h2 className="text-sm text-gray-500 font-semibold mt-1 flex-col hidden lg:block">STATUS</h2>
+            <h2 className="text-sm text-gray-500 font-semibold mt-1 flex-col hidden lg:block">
+              STATUS
+            </h2>
           </div>
 
           {/* Pedido 1 */}
           <div className="whitespace-nowrap flex flex-col lg:flex-row justify-between items-start border-b-2 border-gray-200 py-4 gap-4">
             <div className="flex items-start gap-4">
-              <img src={tenisvermelho} alt="Tênis" className="w-16 h-16 object-cover rounded bg-blue-100" />
+              <img
+                src={tenisvermelho}
+                alt="Tênis"
+                className="w-16 h-16 object-cover rounded bg-blue-100"
+              />
               <div>
                 <p className="text-sm text-gray-500">Pedido nº 2234981932</p>
-                <p className="font-semibold text-gray-800">Tênis Nike Revolution 6 Next Nature Masculino</p>
+                <p className="font-semibold text-gray-800">
+                  Tênis Nike Revolution 6 Next Nature Masculino
+                </p>
               </div>
             </div>
             <div className="flex gap-80 flex-row items-start lg:items-end text-left lg:text-right">
-              <span className="block lg:hidden text-xs text-gray-500 font-semibold">STATUS</span>
-              <p className="text-sm text-yellow-500 font-semibold flex flex-end">Produto em trânsito</p>
+              <span className="block lg:hidden text-xs text-gray-500 font-semibold">
+                STATUS
+              </span>
+              <p className="text-sm text-yellow-500 font-semibold flex flex-end">
+                Produto em trânsito
+              </p>
             </div>
           </div>
 
           {/* Pedido 2 */}
           <div className="whitespace-nowrap flex flex-col lg:flex-row justify-between items-start border-b-2 border-gray-200 py-4 gap-4">
             <div className="flex items-start gap-4">
-              <img src={tenisvermelho} alt="Tênis" className="w-16 h-16 object-cover rounded bg-blue-100" />
+              <img
+                src={tenisvermelho}
+                alt="Tênis"
+                className="w-16 h-16 object-cover rounded bg-blue-100"
+              />
               <div>
                 <p className="text-sm text-gray-500">Pedido nº 2234981932</p>
-                <p className="font-semibold text-gray-800">Tênis Nike Revolution 6 Next Nature Masculino</p>
+                <p className="font-semibold text-gray-800">
+                  Tênis Nike Revolution 6 Next Nature Masculino
+                </p>
               </div>
             </div>
             <div className="flex gap-90 flex-row items-start lg:items-end text-left lg:text-right">
-              <span className="block lg:hidden text-xs text-gray-500 font-semibold">STATUS</span>
-              <p className="text-sm text-gray-400 font-semibold flex flex-end">Finalizado</p>
+              <span className="block lg:hidden text-xs text-gray-500 font-semibold">
+                STATUS
+              </span>
+              <p className="text-sm text-gray-400 font-semibold flex flex-end">
+                Finalizado
+              </p>
             </div>
           </div>
 
           {/* Pedido 3 */}
           <div className="whitespace-nowrap flex flex-col lg:flex-row justify-between items-start border-b-2 border-gray-200 py-4 gap-4">
             <div className="flex items-start gap-4">
-              <img src={tenisvermelho} alt="Tênis" className="w-16 h-16 object-cover rounded bg-blue-100" />
+              <img
+                src={tenisvermelho}
+                alt="Tênis"
+                className="w-16 h-16 object-cover rounded bg-blue-100"
+              />
               <div>
                 <p className="text-sm text-gray-500">Pedido nº 2234981932</p>
-                <p className="font-semibold text-gray-800">Tênis Nike Revolution 6 Next Nature Masculino</p>
+                <p className="font-semibold text-gray-800">
+                  Tênis Nike Revolution 6 Next Nature Masculino
+                </p>
               </div>
             </div>
             <div className="flex gap-90 flex-row items-start lg:items-end text-left lg:text-right">
-              <span className="block lg:hidden text-xs text-gray-500 font-semibold">STATUS</span>
-              <p className="text-sm text-red-500 font-semibold flex flex-end">Cancelado</p>
+              <span className="block lg:hidden text-xs text-gray-500 font-semibold">
+                STATUS
+              </span>
+              <p className="text-sm text-red-500 font-semibold flex flex-end">
+                Cancelado
+              </p>
             </div>
           </div>
 
           {/* Pedido 4 */}
           <div className="whitespace-nowrap flex flex-col lg:flex-row justify-between items-start border-b-2 border-gray-200 py-4 gap-4">
             <div className="flex items-start gap-4">
-              <img src={tenisvermelho} alt="Tênis" className="w-16 h-16 object-cover rounded bg-blue-100" />
+              <img
+                src={tenisvermelho}
+                alt="Tênis"
+                className="w-16 h-16 object-cover rounded bg-blue-100"
+              />
               <div>
                 <p className="text-sm text-gray-500">Pedido nº 2234981932</p>
-                <p className="font-semibold text-gray-800">Tênis Nike Revolution 6 Next Nature Masculino</p>
+                <p className="font-semibold text-gray-800">
+                  Tênis Nike Revolution 6 Next Nature Masculino
+                </p>
               </div>
             </div>
             <div className="flex gap-90 flex-row items-start lg:items-end text-left lg:text-right">
-              <span className="block lg:hidden text-xs text-gray-500 font-semibold">STATUS</span>
-              <p className="text-sm text-gray-400 font-semibold mt-1 flex flex-end">Finalizado</p>
+              <span className="block lg:hidden text-xs text-gray-500 font-semibold">
+                STATUS
+              </span>
+              <p className="text-sm text-gray-400 font-semibold mt-1 flex flex-end">
+                Finalizado
+              </p>
             </div>
           </div>
 
           {/* Pedido 5 */}
           <div className="whitespace-nowrap flex flex-col lg:flex-row justify-between items-start border-b-2 border-gray-200 py-4 gap-4">
             <div className="flex items-start gap-4">
-              <img src={tenisvermelho} alt="Tênis" className="w-16 h-16 object-cover rounded bg-blue-100" />
+              <img
+                src={tenisvermelho}
+                alt="Tênis"
+                className="w-16 h-16 object-cover rounded bg-blue-100"
+              />
               <div>
                 <p className="text-sm text-gray-500">Pedido nº 2234981932</p>
-                <p className="font-semibold text-gray-800">Tênis Nike Revolution 6 Next Nature Masculino</p>
+                <p className="font-semibold text-gray-800">
+                  Tênis Nike Revolution 6 Next Nature Masculino
+                </p>
               </div>
             </div>
             <div className="flex gap-90 flex-row items-start lg:items-end text-left lg:text-right">
-              <span className="block lg:hidden text-xs text-gray-500 font-semibold">STATUS</span>
-              <p className="text-sm text-gray-400 font-semibold mt-1 flex flex-end">Finalizado</p>
+              <span className="block lg:hidden text-xs text-gray-500 font-semibold">
+                STATUS
+              </span>
+              <p className="text-sm text-gray-400 font-semibold mt-1 flex flex-end">
+                Finalizado
+              </p>
             </div>
           </div>
         </div>
