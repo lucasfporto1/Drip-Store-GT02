@@ -3,11 +3,10 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 //  import App from '.'
 import { BrowserRouter, Routes, Route } from "react-router";
-// import DetalheProd from './pages/DetalheProd.jsx';
+import DetalheProd from './pages/DetalheProd.jsx';
 import FinalPagamento from './pages/FinalPagamento.jsx';
-import myInformacao from './pages/MinhaInformacao.jsx';
-import MinhaInformacao from './pages/MinhaInformacao.jsx';
-import HambuguerInformacao from './pages/HambuguerInformacao.jsx';
+import MeusPedidos from './pages/MeusPedidos.jsx';
+import HamburguerPedidos from './pages/HamburguerPedidos.jsx';
 import ConfiguracaoCompra from './pages/configuracaoCompra.jsx';
 
 
@@ -19,8 +18,10 @@ createRoot(document.getElementById('root')).render(
       {/* <Route path="/" element={<DetalheProd />} /> */}
        {/* <Route path="/" element={<FinalPagamento />} /> */}
        {/* <Route path="/" element={<MinhaInformacao />} /> */}
-       {/* <Route path="/" element={<HambuguerInformacao />} /> */}
-       <Route path="/" element={<ConfiguracaoCompra />} />
+       <Route path="/" element={< HamburguerPedidos />} />
+       {/* <Route path="/" element={<MeusPedidos />} /> */}
+       {/* <Route path="/" element={<HambuguerPedidos />} /> */}
+
 
 
 
