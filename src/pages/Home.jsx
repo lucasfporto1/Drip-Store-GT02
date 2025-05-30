@@ -1,5 +1,4 @@
 import React from "react";
-import LayoutWrapper from "../components/LayoutWrapper";
 import TenisJordan from "../assets/imagens/Tenis-jordan.png";
 import TenisVermelho from "../assets/imagens/tenisvermelho.png";
 import tenis from "../assets/tenis.png";
@@ -21,7 +20,6 @@ export default function HomePage() {
   }));
 
   return (
-    <LayoutWrapper>
       <main className="bg-[#F5F5F5]">
         {/* Banner Principal */}
         <section className="bg-[#F6F6F6] py-12 flex justify-center relative overflow-hidden">
@@ -254,6 +252,5 @@ export default function HomePage() {
           </div>
         </section>
       </main>
-    </LayoutWrapper>
   );
 }

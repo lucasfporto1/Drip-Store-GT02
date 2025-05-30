@@ -15,24 +15,30 @@ import ConfiguracaoCompra from "./pages/configuracaoCompra.jsx";
 import DetalheProd from "./pages/detalheProd.jsx";
 import MeuCarrinhoPage from "./pages/MeuCarrinhoPage.jsx";
 import { Link } from "react-router-dom";
+import LayoutWrapper from "./components/LayoutWrapper.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/produtos" element={<Produtos />} />
-        <Route path="/configuracaoCompra" element={<ConfiguracaoCompra />} />
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/cadastroCriarConta" element={<CadastroCriarConta />} />
-        <Route path="/cadastroCompleto" element={<CadastroCompleto />} />
-        <Route path="/minhasinformacoes" element={<MinhasInformacoes />} />
-        <Route path="/finalPagamento" element={<FinalPagamento />} />
-        <Route path="/meuspedidos" element={<MeusPedidos />} />
-        <Route path="/hambuguerInformacao" element={<HambuguerInformacao />} />
-        <Route path="/detalhes" element={<DetalheProd />} />
-        <Route path="/meucarrinho" element={<MeuCarrinhoPage />} />
-      </Routes>
+      <LayoutWrapper>
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="/produtos" element={<Produtos />} />
+          <Route path="/configuracaoCompra" element={<ConfiguracaoCompra />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/cadastroCriarConta" element={<CadastroCriarConta />} />
+          <Route path="/cadastroCompleto" element={<CadastroCompleto />} />
+          <Route path="/minhasinformacoes" element={<MinhasInformacoes />} />
+          <Route path="/finalPagamento" element={<FinalPagamento />} />
+          <Route path="/meuspedidos" element={<MeusPedidos />} />
+          <Route
+            path="/hambuguerInformacao"
+            element={<HambuguerInformacao />}
+          />
+          <Route path="/detalhes" element={<DetalheProd />} />
+          <Route path="/meucarrinho" element={<MeuCarrinhoPage />} />
+        </Routes>
+      </LayoutWrapper>
     </BrowserRouter>
   </StrictMode>
 );

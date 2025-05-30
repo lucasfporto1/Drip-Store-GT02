@@ -1,4 +1,3 @@
-import LayoutWrapper from "../components/LayoutWrapper";
 import filterIcon from "../assets/Filter-icon.png";
 import tenis from "../assets/tenis.png";
 import ModalMeuCarrinho from "../components/ModalMeuCarrinho";
@@ -20,7 +19,7 @@ export default function ProdutosPage() {
   });
 
   return (
-    <LayoutWrapper>
+    <>
       <ModalMeuCarrinho />
       <section className="bg-[#f9f8fe] px-4 md:px-10 py-6">
         <div className="max-w-[1440px] mx-auto">
@@ -86,7 +85,7 @@ export default function ProdutosPage() {
               <h2 className="font-bold mb-4 text-base text-gray-800">
                 Filtrar por
               </h2>
-              <hr className="text-[#CCCCCC] mb-5"/>
+              <hr className="text-[#CCCCCC] mb-5" />
               {/* Filtros */}
               <div className="space-y-5">
                 {[
@@ -196,6 +195,6 @@ export default function ProdutosPage() {
           </div>
         </div>
       </section>
-    </LayoutWrapper>
+    </>
   );
 }

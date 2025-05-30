@@ -1,4 +1,3 @@
-import LayoutWrapper from "../components/LayoutWrapper";
 import tenis from "../assets/tenis.png";
 
 export default function MeuCarrinhoPage() {
@@ -11,7 +10,7 @@ export default function MeuCarrinhoPage() {
   });
 
   return (
-    <LayoutWrapper>
+    <>
       <div className="bg-[#f9f8fe] min-h-screen p-4 text-sm text-gray-800 lg:grid lg:grid-cols-3 lg:gap-6">
         {/* COLUNA ESQUERDA (2/3 da tela no desktop) */}
         <div className="lg:col-span-2 space-y-4 lg:ml-8">
@@ -271,6 +270,6 @@ export default function MeuCarrinhoPage() {
           Continuar
         </button>
       </div>
-    </LayoutWrapper>
+    </>
   );
 }

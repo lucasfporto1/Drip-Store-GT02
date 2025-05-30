@@ -38,25 +38,22 @@ export default function HeaderDesktop() {
       <nav className="w-full px-8 xl:px-16 pb-4">
         <ul className="flex justify-left gap-8 text-base">
           <li>
-            <a href="#" className="hover:text-pink-600">
+            <a href="#" className="hover:text-pink-600 hover:border-b-2">
               Home
             </a>
           </li>
           <li>
-            <a
-              href="#"
-              className="text-pink-600 font-semibold border-b-2 border-pink-600"
-            >
+            <a href="#" className="hover:text-pink-600 hover:border-b-2">
               Produtos
             </a>
           </li>
           <li>
-            <a href="#" className="hover:text-pink-600">
+            <a href="#" className="hover:text-pink-600 hover:border-b-2">
               Categorias
             </a>
           </li>
           <li>
-            <a href="#" className="hover:text-pink-600">
+            <a href="#" className="hover:text-pink-600 hover:border-b-2">
               Meus Pedidos
             </a>
           </li>
