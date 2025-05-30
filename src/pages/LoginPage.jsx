@@ -70,7 +70,7 @@ export default function LoginPage() {
           <div className="flex flex-col items-center md:flex-row md:justify-center">
             <div className="flex flex-col items-start">
               <p className="font-[Inter] text-[14px] mb-3 mt-5 mr-2">
-                Ou faça login com
+                Ou faça login com:
               </p>
             </div>
             <div className="flex flex-row items-center space-x-4">

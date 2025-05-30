@@ -6,18 +6,18 @@ export default function MinhasInformacoes() {
     <div className="bg-gray-100 min-h-screen flex items-center justify-center">
       <div className=" container mx-auto p-4 flex flex-col md:flex-row gap-6">
         {/* Menu lateral */}
-        <aside className="border-b-2 shadow-md border-gray-200 bg-white h-fit w-full md:w-1/4 p-4 rounded hidden md:block">
+        <aside className="border-b-2 shadow-md border-gray-200 bg-white h-fit w-full md:w-1/4 p-5 rounded hidden md:block">
           <ul className="space-y-4">
-            <li className="text-gray-700 font-semibold cursor-pointer border-l-4 border-transparent pl-2  hover:text-pink-600">
+            <li className="text-gray-700 font-semibold border-b-2 border-gray-300 cursor-pointer pl-3 pb-5  hover:text-pink-600">
               Meu Perfil
             </li>
-            <li className="text-gray-700 font-semibold cursor-pointer border-l-4 border-transparent pl-2  hover:text-pink-600">
+            <li className="text-gray-700 font-semibold  cursor-pointer border-b-2 border-gray-300 pl-3 pb-5 hover:text-pink-600">
               <Link to="/meuspedidos">Meus Pedidos</Link>
             </li>
-            <li className="text-gray-700 font-semibold cursor-pointer border-l-4 border-transparent pl-2  hover:text-pink-600">
+            <li className="text-gray-700 font-semibold  cursor-pointer border-b-2 border-gray-300 pl-3 pb-5 hover:text-pink-600">
               Minhas Informações
             </li>
-            <li className="text-gray-700 font-semibold cursor-pointer border-l-4 border-transparent pl-2  hover:text-pink-600">
+            <li className="text-gray-700 font-semibold cursor-pointer pl-3  hover:text-pink-600">
               Métodos de Pagamento
             </li>
           </ul>
