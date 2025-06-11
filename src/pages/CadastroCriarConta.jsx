@@ -45,9 +45,9 @@ export default function CadastroCriarConta() {
             </button>
           </form>
 
-          <div className="flex flex-col items-center">
+          <div className="flex md:flex-row md:justify-center flex-col items-center">
             <p className="font-[Inter] text-[14px] mb-3 mt-5">
-              Ou faça login com
+              Ou faça login com:
             </p>
             <div className="flex items-center space-x-4">
               {/* Ícone do Gmail */}

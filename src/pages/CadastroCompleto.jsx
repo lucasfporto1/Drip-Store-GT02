@@ -33,7 +33,7 @@ export default function CadastroCompleto() {
                     type="text"
                     id="nome"
                     placeholder="Insira seu nome"
-                    className="border-2 border-gray-100 bg-gray-100 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 w-full"
+                    className="border-2 border-gray-100 bg-gray-100 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-gray-500 w-full"
                   />
                 </div>
 
@@ -48,7 +48,7 @@ export default function CadastroCompleto() {
                     type="text"
                     id="cpf"
                     placeholder="Insira seu CPF"
-                    className="border-2 border-gray-100 bg-gray-100 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 w-full"
+                    className="border-2 border-gray-100 bg-gray-100 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-gray-500 w-full"
                   />
                 </div>
 
@@ -63,7 +63,7 @@ export default function CadastroCompleto() {
                     type="email"
                     id="email"
                     placeholder="Insira seu e-mail"
-                    className="border-2 border-gray-100 bg-gray-100 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 w-full"
+                    className="border-2 border-gray-100 bg-gray-100 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-gray-500 w-full"
                   />
                 </div>
 
@@ -78,7 +78,7 @@ export default function CadastroCompleto() {
                     type="text"
                     id="celular"
                     placeholder="Insira seu celular"
-                    className="border-2 border-gray-100 bg-gray-100 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 w-full"
+                    className="border-2 border-gray-100 bg-gray-100 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-gray-500 w-full"
                   />
                 </div>
               </div>

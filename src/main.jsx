@@ -10,12 +10,11 @@ import MinhasInformacoes from "./pages/MinhaInformacoes.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import FinalPagamento from "./pages/FinalPagamento.jsx";
 import MeusPedidos from "./pages/MeusPedidos.jsx";
-import HambuguerInformacao from "./pages/HambuguerInformacao.jsx";
 import ConfiguracaoCompra from "./pages/configuracaoCompra.jsx";
 import DetalheProd from "./pages/detalheProd.jsx";
 import MeuCarrinhoPage from "./pages/MeuCarrinhoPage.jsx";
-import { Link } from "react-router-dom";
 import LayoutWrapper from "./components/LayoutWrapper.jsx";
+import HamburguerPedidos from "./pages/HamburguerPedidos.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -31,10 +30,7 @@ createRoot(document.getElementById("root")).render(
           <Route path="/minhasinformacoes" element={<MinhasInformacoes />} />
           <Route path="/finalPagamento" element={<FinalPagamento />} />
           <Route path="/meuspedidos" element={<MeusPedidos />} />
-          <Route
-            path="/hambuguerInformacao"
-            element={<HambuguerInformacao />}
-          />
+          <Route path="/hamburguerPedidos" element={<HamburguerPedidos />}/>
           <Route path="/detalhes" element={<DetalheProd />} />
           <Route path="/meucarrinho" element={<MeuCarrinhoPage />} />
         </Routes>
