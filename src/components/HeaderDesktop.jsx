@@ -1,4 +1,5 @@
 import Logo from "../assets/logo.png";
+import { Link } from "react-router-dom";
 
 export default function HeaderDesktop() {
   return (
@@ -25,7 +26,7 @@ export default function HeaderDesktop() {
         {/* Ações: cadastro, login, carrinho */}
         <div className="flex items-center gap-6 flex-shrink-0">
           <a href="#" className="text-base text-[#474747]">
-            Cadastre-se
+            <Link to="/cadastroCompleto">Cadastre-se</Link>
           </a>
           <button className="bg-[#c92071] text-white px-6 py-3 rounded text-base hover:text-pink-600 hover:bg-white transition duration-300 cursor-pointer">
             Entrar
@@ -39,22 +40,22 @@ export default function HeaderDesktop() {
         <ul className="flex justify-left gap-8 text-base">
           <li>
             <a href="#" className="hover:text-pink-600 hover:border-b-2">
-              Home
+              <Link to="/#">Home</Link>
             </a>
           </li>
           <li>
             <a href="#" className="hover:text-pink-600 hover:border-b-2">
-              Produtos
+              <Link to="/produtos">Produtos</Link>
             </a>
           </li>
           <li>
             <a href="#" className="hover:text-pink-600 hover:border-b-2">
-              Categorias
+              <Link to="/categorias">Categorias</Link>
             </a>
           </li>
           <li>
             <a href="#" className="hover:text-pink-600 hover:border-b-2">
-              Meus Pedidos
+              <Link to="/meuspedidos">Meus Pedidos</Link>
             </a>
           </li>
         </ul>
