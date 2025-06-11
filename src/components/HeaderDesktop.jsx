@@ -7,9 +7,11 @@ export default function HeaderDesktop() {
       {/* Linha superior */}
       <div className="w-full px-8 xl:px-16 flex items-center justify-between py-6 gap-6">
         {/* Logo */}
-        <div className="flex-shrink-0 text-pink-600 font-bold text-2xl">
-          <img src={Logo} alt="Logo" className="w-40" />
-        </div>
+        <a href="/">
+          <div className="flex-shrink-0 text-pink-600 font-bold text-2xl cursor-pointer">
+            <img src={Logo} alt="Logo" className="w-40" />
+          </div>
+        </a>
 
         {/* Campo de busca */}
         <div className="flex-grow max-w-[600px] mx-4 flex">
@@ -29,9 +31,11 @@ export default function HeaderDesktop() {
             <Link to="/cadastroCompleto">Cadastre-se</Link>
           </a>
           <button className="bg-[#c92071] text-white px-6 py-3 rounded text-base hover:text-pink-600 hover:bg-white transition duration-300 cursor-pointer">
-            Entrar
+            <Link to="/login">Entrar</Link>
           </button>
-          <i className="fa-solid fa-cart-shopping text-2xl text-pink-600 cursor-pointer"></i>
+          <a href="meucarrinho">
+            <i className="fa-solid fa-cart-shopping text-2xl text-pink-600 cursor-pointer"></i>
+          </a>
         </div>
       </div>
 

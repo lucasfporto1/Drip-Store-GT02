@@ -1,4 +1,5 @@
 import TenisVermelho from "../assets/imagens/tenisvermelho.png";
+import { Link } from "react-router-dom";
 
 export default function BannerPrincipalHome() {
   return (
@@ -19,7 +20,7 @@ export default function BannerPrincipalHome() {
             href="#"
             className="inline-block bg-[#C92071] text-white px-10 py-3 rounded-lg font-semibold hover:opacity-90 transition"
           >
-            Ver ofertas
+            <Link to="/detalhes"> Ver ofertas</Link>
           </a>
         </div>
         <img
