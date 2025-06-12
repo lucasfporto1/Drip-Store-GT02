@@ -28,11 +28,10 @@ export default function GaleriaProduto() {
 
   return (
 
-    <div className="container mx-auto px-4  h-full py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
-  <div className=" md:grid-cols-2 flex flex-col w-full h-full ">
-    {/* Imagem principal com fundo colorido */}
+    <div className="container mx-auto px-4 h-full py-10 ">
+  <div className="  flex flex-col w-full h-full ">
     <div
-      className={`relative w-full h-3/4 rounded-lg ${fundos[indiceAtual].cor} flex items-center justify-center `}
+      className={`relative w-full h-full rounded-lg ${fundos[indiceAtual].cor} flex items-center justify-center `}
     >
       <img src={tenis} alt="Tênis" className="w-full h-full object-contain" />
 
@@ -55,16 +54,16 @@ export default function GaleriaProduto() {
       </div>
 
       {/* Miniaturas */}
-      <div className="flex justify-center gap-2 mt-4">
+      <div className="flex justify-between gap-2 mt-4 md:gap-6 w-full h-full grip grip-cols-3 grip-cols-2 grip-cols-5 ">
         {fundos.map((item, index) => (
           <div
             key={item.id}
             onClick={() => trocarImagem(index)}
-            className={`w-20 h-20 ${item.cor} rounded flex items-center justify-center cursor-pointer border-2 ${
+            className={`w-80rem h-80rem ${item.cor} rounded flex items-center justify-center cursor-pointer border-2 ${
               indiceAtual === index ? 'border-pink-600' : 'border-transparent'
             }`}
           >
-            <img src={tenis} alt={`Variante ${index + 1}`} className="w-8 h-8 object-contain" />
+            <img src={tenis} alt={`Variante ${index + 1}`} className="w-full h-full object-contain" />
           </div>
         ))}
       </div>
