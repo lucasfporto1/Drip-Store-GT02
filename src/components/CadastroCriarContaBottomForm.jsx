@@ -1,4 +1,4 @@
-export default function CadastroCriarContaBottomForm() {
+export default function CadastroLoginBottomForm() {
   return (
     <div className="flex md:flex-row md:justify-center flex-col items-center">
       <p className="font-[Inter] text-[14px] mb-3 mt-5">Ou faça login com:</p>

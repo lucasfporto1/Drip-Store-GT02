@@ -1,38 +1,12 @@
 import tenisvermelho from "../assets/imagens/tenisvermelho.png";
+import MenuLateralInformacoes from "../components/MenuLateralInformacoes";
 
 export default function MeusPedidos() {
   return (
     <div className="bg-gray-100 p-4 min-h-screen overflow-x-hidden">
       <main className="container mx-auto flex flex-col lg:flex-row items-start justify-center gap-10 w-full min-h-screen pt-6">
         {/* Menu lateral */}
-        <section className="bg-white rounded-lg shadow-md hidden lg:block w-full lg:max-w-sm p-6 justify-start">
-          <label className="flex border-b-2 border-gray-200 py-4 items-start">
-            <input type="radio" name="tamanho" className="peer hidden" />
-            <div className="text-lg font-semibold mb-4 cursor-pointer peer-checked:text-pink-600 hover transition">
-              Meu Perfil
-            </div>
-          </label>
-          <label className="flex border-b-2 border-gray-200 py-4 items-start">
-            <input type="radio" name="tamanho" className="peer hidden" />
-            <div className="text-lg font-semibold mb-4 cursor-pointer peer-checked:text-pink-600 hover transition">
-              Meus Pedidos
-            </div>
-          </label>
-          <label className="flex border-b-2 border-gray-200 py-4 items-start">
-            <input type="radio" name="tamanho" className="peer hidden" />
-            <a href="minhasinformacoes">
-              <div className="text-lg font-semibold mb-4 cursor-pointer peer-checked:text-pink-600 hover transition">
-                Minhas Informações
-              </div>
-            </a>
-          </label>
-          <label className="flex border-b-2 border-gray-200 py-4 items-start">
-            <input type="radio" name="tamanho" className="peer hidden" />
-            <div className="text-lg font-semibold mb-4 cursor-pointer peer-checked:text-pink-600 hover transition">
-              Métodos de Pagamento
-            </div>
-          </label>
-        </section>
+        <MenuLateralInformacoes />
 
         {/* Conteúdo principal */}
         <div className="w-full max-w-full lg:max-w-[600px] rounded-lg shadow-md p-6 sm:p-10 bg-white ">
