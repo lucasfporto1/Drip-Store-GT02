@@ -1,3 +1,5 @@
+import AtalhoDetalhes from "../components/AtalhoDetalhes.jsx"
+import GaleriaProduto from "../components/GaleriaDetalhes.jsx";
 import estrelas from "../assets/imagens/estrelas.png";
 import tenisvermelho from "../assets/imagens/tenisvermelho.png";
 import tenisazul from "../assets/imagens/tenisazul.png";
@@ -6,16 +8,15 @@ import tenisazul2 from "../assets/imagens/sptazulxbonus.png";
 export default function DetalheProd() {
   return (
     <div>
-      <span className="text-sm text-gray-500 mt-3 px-4 block">
-        Home / Produtos / Tenis / Nike / Tenis Nike Revolution 6 Nature
-        Masculino
-      </span>
+     <AtalhoDetalhes/>
 
+ {/* <!-- Galeria de Imagens --> */}
       <div className="container mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-2 gap-10">
-        {/* <!-- Galeria de Imagens --> */}
-        <div>
-          <div className="flex items-center justify-center p-4 rounded-lg">
-            <img
+
+      <GaleriaProduto/>
+        {/* <div>
+          <div className="">
+            <imgflex items-center justify-center p-4 rounded-lg
               className="w-full h-full "
               src={tenisvermelho}
               alt="tenisvermelho"
@@ -58,7 +59,7 @@ export default function DetalheProd() {
               />
             </button>
           </div>
-        </div>
+        </div> */}
 
         {/* <!-- Informações do Produto --> */}
         <div>
