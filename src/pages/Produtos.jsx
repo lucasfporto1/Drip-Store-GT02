@@ -1,5 +1,6 @@
 import filterIcon from "../assets/Filter-icon.png";
-import tenis from "../assets/tenis.png";
+import FiltroModal from "../components/FiltroModal";
+import GridProdutos from "../components/GridProdutos";
 import ModalMeuCarrinho from "../components/ModalMeuCarrinho";
 import { useState } from "react";
 
@@ -9,14 +10,6 @@ export default function ProdutosPage() {
   const ModalAbrirFiltro = () => {
     setMostrarFiltro(!mostrarFiltro);
   };
-
-  const tenisList = new Array(16).fill({
-    name: "Tênis Nike Air Max - Feminino",
-    price: "$100",
-    originalPrice: "$200",
-    discount: 30,
-    imageUrl: tenis,
-  });
 
   return (
     <>
@@ -73,125 +66,13 @@ export default function ProdutosPage() {
     w-full max-w-[280px]  bg-white p-5 rounded-lg shadow-lg text-sm
   `}
             >
-              {/** Botão para fechar (somente no mobile) */}
-              <div className="flex justify-end md:hidden mb-4">
-                <button
-                  onClick={ModalAbrirFiltro}
-                  className="text-[#474747] font-bold"
-                >
-                  ✕
-                </button>
-              </div>
-              <h2 className="font-bold mb-4 text-base text-gray-800">
-                Filtrar por
-              </h2>
-              <hr className="text-[#CCCCCC] mb-5" />
-              {/* Filtros */}
-              <div className="space-y-5">
-                {[
-                  {
-                    title: "Marca",
-                    options: [
-                      "Adidas",
-                      "Balenciaga",
-                      "K-Swiss",
-                      "Nike",
-                      "Puma",
-                    ],
-                    type: "checkbox",
-                  },
-                  {
-                    title: "Categoria",
-                    options: [
-                      "Esporte e lazer",
-                      "Casual",
-                      "Utilitário",
-                      "Corrida",
-                    ],
-                    type: "checkbox",
-                  },
-                  {
-                    title: "Gênero",
-                    options: ["Masculino", "Feminino", "Unisex"],
-                    type: "checkbox",
-                  },
-                  {
-                    title: "Estado",
-                    options: ["Novo", "Usado"],
-                    type: "radio",
-                  },
-                ].map((filter) => (
-                  <div key={filter.title}>
-                    <h4 className="text-sm font-medium">{filter.title}</h4>
-                    <div className="space-y-2 mt-2">
-                      {filter.options.map((option) => (
-                        <label
-                          key={option}
-                          className="flex items-center space-x-2"
-                        >
-                          <input
-                            type={filter.type}
-                            name={filter.title}
-                            value={option}
-                            className={`
-                              ${
-                                filter.type === "radio"
-                                  ? "form-radio"
-                                  : "form-checkbox"
-                              }
-                              accent-[#c92071]
-                            `}
-                          />
-                          <span className="text-sm">{option}</span>
-                        </label>
-                      ))}
-                    </div>
-                  </div>
-                ))}
-              </div>
+              {/* Filtro Modal */}
+
+              <FiltroModal />
             </aside>
 
             {/* Grid de produtos */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 flex-1">
-              {tenisList.map((item, index) => (
-                <div key={index} className="cursor-pointer">
-                  {/* Card da imagem + badge */}
-                  <div className="bg-white p-4 shadow-sm relative">
-                    {/* Badge de desconto */}
-                    {index < 2 && (
-                      <span className="absolute top-3 left-3 bg-[#E7FF86] text-[#474747] text-xs font-bold px-2 py-1 rounded-full">
-                        {item.discount}% OFF
-                      </span>
-                    )}
-
-                    {/* Imagem */}
-                    <img
-                      src={item.imageUrl}
-                      alt={item.name}
-                      className="mx-auto mb-4 w-full"
-                    />
-                  </div>
-
-                  {/* Informações do produto (fora da moldura) */}
-                  <div className="mt-2 px-1">
-                    <p className="text-[#8F8F8F] text-sm font-semibold">
-                      Tênis
-                    </p>
-                    <p className="text-[#474747] font-semibold text-sm leading-tight">
-                      {item.name}
-                    </p>
-                    <p className="text-base mt-1">
-                      <span className="line-through text-[#8f8f8f] mr-2">
-                        {item.originalPrice}
-                      </span>
-                      <span className="text-[#1f1f1f] font-bold">
-                        {item.price}
-                      </span>
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
+            <GridProdutos />
           </div>
         </div>
       </section>
