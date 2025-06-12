@@ -42,10 +42,10 @@ export default function MeusPedidos() {
           {/* Pedido 1 */}
           <div className="flex flex-col lg:flex-row justify-between items-start border-b-2 border-gray-200 py-4 gap-4 w-full">
         <div className="flex items-start gap-4 w-full">
-         <img src={tenisvermelho} alt="Tênis" className="w-16 h-16 object-cover rounded bg-blue-100 flex-shrink-0" />
+         <img src={tenisvermelho} alt="Tênis" className="w-16 h-16 object-contain rounded bg-white flex-shrink-0" />
           <div className="w-full overflow-hidden whitespace-nowrap">
             <p className="text-sm text-gray-500 truncate">Pedido nº 2234981936</p>
-            <p className="font-semibaold text-gray-800 whitespace-nowrap">Tênis Nike Revolution 6 Next Nature Masculino</p>
+            <p className="font-semibold text-gray-800 whitespace-nowrap">Tênis Nike Revolution 6 Next Nature Masculino</p>
           </div>
         </div>
        <div className="w-full flex justify-between items-center mt-2">
@@ -62,10 +62,10 @@ export default function MeusPedidos() {
           {/* Pedido 2 */}
          <div className="flex flex-col lg:flex-row justify-between items-start border-b-2 border-gray-200 py-4 gap-4 w-full">
         <div className="flex items-start gap-4 w-full">
-         <img src={tenisvermelho} alt="Tênis" className="w-16 h-16 object-cover rounded bg-blue-100 flex-shrink-0" />
+         <img src={tenisvermelho} alt="Tênis" className="w-16 h-16 object-contain rounded bg-white-100 flex-shrink-0" />
           <div className="w-full overflow-hidden whitespace-nowrap">
             <p className="text-sm text-gray-500 truncate">Pedido nº 2234981936</p>
-            <p className="font-semibaold text-gray-800 whitespace-nowrap">Tênis Nike Revolution 6 Next Nature Masculino</p>
+            <p className="font-semibold text-gray-800 whitespace-nowrap">Tênis Nike Revolution 6 Next Nature Masculino</p>
           </div>
         </div>
        <div className="w-full flex justify-between items-center mt-2">
@@ -82,10 +82,10 @@ export default function MeusPedidos() {
           {/* Pedido 3 */}
          <div className="flex flex-col lg:flex-row justify-between items-start border-b-2 border-gray-200 py-4 gap-4 w-full">
         <div className="flex items-start gap-4 w-full">
-         <img src={tenisvermelho} alt="Tênis" className="w-16 h-16 object-cover rounded bg-blue-100 flex-shrink-0" />
+         <img src={tenisvermelho} alt="Tênis" className="w-16 h-16 object-contain rounded bg-white-100 flex-shrink-0" />
           <div className="w-full overflow-hidden whitespace-nowrap">
             <p className="text-sm text-gray-500 truncate">Pedido nº 2234981936</p>
-            <p className="font-semibaold text-gray-800 whitespace-nowrap">Tênis Nike Revolution 6 Next Nature Masculino</p>
+            <p className="font-semibold text-gray-800 whitespace-nowrap">Tênis Nike Revolution 6 Next Nature Masculino</p>
           </div>
         </div>
        <div className="w-full flex justify-between items-center mt-2">
@@ -102,10 +102,10 @@ export default function MeusPedidos() {
           {/* Pedido 4 */}
           <div className="flex flex-col lg:flex-row justify-between items-start border-b-2 border-gray-200 py-4 gap-4 w-full">
         <div className="flex items-start gap-4 w-full">
-         <img src={tenisvermelho} alt="Tênis" className="w-16 h-16 object-cover rounded bg-blue-100 flex-shrink-0" />
+         <img src={tenisvermelho} alt="Tênis" className="w-16 h-16 object-contain rounded bg-white-100 flex-shrink-0" />
           <div className="w-full overflow-hidden whitespace-nowrap">
             <p className="text-sm text-gray-500 truncate">Pedido nº 2234981936</p>
-            <p className="font-semibaold text-gray-800 whitespace-nowrap">Tênis Nike Revolution 6 Next Nature Masculino</p>
+            <p className="font-semibold text-gray-800 whitespace-nowrap">Tênis Nike Revolution 6 Next Nature Masculino</p>
           </div>
         </div>
        <div className="w-full flex justify-between items-center mt-2">
@@ -122,10 +122,10 @@ export default function MeusPedidos() {
           {/* Pedido 5 */}
               <div className="flex flex-col lg:flex-row justify-between items-start border-b-2 border-gray-200 py-4 gap-4 w-full">
         <div className="flex items-start gap-4 w-full">
-         <img src={tenisvermelho} alt="Tênis" className="w-16 h-16 object-cover rounded bg-blue-100 flex-shrink-0" />
+         <img src={tenisvermelho} alt="Tênis" className="w-16 h-16 object-contain rounded bg-white-100 flex-shrink-0" />
           <div className="w-full overflow-hidden whitespace-nowrap">
             <p className="text-sm text-gray-500 truncate">Pedido nº 2234981936</p>
-            <p className="font-semibaold text-gray-800 whitespace-nowrap">Tênis Nike Revolution 6 Next Nature Masculino</p>
+            <p className="font-semibold text-gray-800 whitespace-nowrap">Tênis Nike Revolution 6 Next Nature Masculino</p>
           </div>
         </div>
        <div className="w-full flex justify-between items-center mt-2">

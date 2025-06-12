@@ -52,7 +52,7 @@ export default function ProdutosPage() {
           </div>
 
           {/* Título de resultados */}
-          <div className="flex gap-1 mb-6 md:flex">
+          <div className="flex gap-1 mb-6 md:flex relative bottom-[45px]">
             <p className="font-bold text-[#4c4c4c]">
               Resultados para "Tênis" -
             </p>

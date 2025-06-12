@@ -8,6 +8,11 @@ import calçaIcon from "../assets/imagens/calça-icon.png";
 import tenisIcon from "../assets/imagens/tenis-icon.png";
 import HeadPhone from "../assets/imagens/headphone-icon.png";
 import BannerPrincipalHome from "../components/BannerPrincipaHomel";
+import camisa2 from "../assets/imagens/camisa2.png";
+import calça2 from "../assets/imagens/calça2.png";
+import sapato2 from "../assets/imagens/sapato2.png";
+import Icones from "../components/icones";
+
 
 export default function HomePage() {
   const tenisList = Array.from({ length: 8 }, (_, i) => ({
@@ -45,7 +50,7 @@ export default function HomePage() {
               </a>
             </div>
             <img
-              className="absolute w-[18rem] top-[4.25rem] right-[-6.9rem] rotate-[30deg]"
+              className="absolute w-[18rem] top-[4.25rem] right-[-6.9rem] rotate-[30deg] "
               src={Camisa}
               alt="Camisa Supreme em promoção"
             />
@@ -104,43 +109,7 @@ export default function HomePage() {
       </section>
 
       {/* Categorias */}
-      <section className="flex justify-center">
-        <div className="w-[92%] flex items-center flex-col gap-4">
-          <h4 className="font-bold text-xl tracking-[0.04rem] text-zinc-600">
-            Coleções em destaque
-          </h4>
-          <div className="flex flex-row gap-4">
-            {[
-              { img: tenisIcon }, // Substituído null por imagem válida
-              { img: calçaIcon },
-              { img: HeadPhone }, // Reorganizado para evitar placeholders
-              { img: tenisIcon },
-              { img: HeadPhone },
-            ].map((cat, i) => (
-              <div
-                key={i}
-                className="flex flex-col items-center justify-center cursor-pointer gap-2 p-3 bg-white rounded-full hover:bg-pink-400 transition-colors"
-              >
-                {cat.img ? (
-                  <img
-                    className="w-16 h-16 object-contain"
-                    src={cat.img}
-                    alt={`Ícone de ${cat.nome}`}
-                  />
-                ) : (
-                  <div className="w-16 h-16 bg-gray-200 flex items-center justify-center text-sm text-gray-500 rounded-full hover:bg-pink-200 transition-colors">
-                    Sem imagem
-                  </div>
-                )}
-                <p className="text-sm font-semibold text-[#474747]">
-                  {cat.nome}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
+     <Icones />
       {/* Produtos em Alta */}
       <section className="flex justify-center py-10">
         <div className="w-[92%] flex flex-col gap-4">
