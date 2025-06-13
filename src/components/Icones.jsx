@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import camisa3 from "../assets/imagens/camisa3.png";
 import calçaIcon from "../assets/imagens/calça-icon.png";
 import HeadPhone from "../assets/imagens/headphone-icon.png";
-import tenisIcon from "../assets/imagens/fone.png"
+import tenisIcon from "../assets/imagens/Tenis-icon.png"
 
 
 import sapato2 from "../assets/imagens/sapato2.png";
@@ -18,8 +18,8 @@ export default function () {
     { img: camisa3, hover: camisa2, nome: "Camisetas" },
     { img: calçaIcon, hover: calça2, nome: "Calças" },
     { img: calçaIcon, hover: fone, nome: "Bonés" },
-    { img: HeadPhone, hover: sapato2, nome: "HeadPhones" },
-    { img: tenisIcon, hover: fone, nome: "Tênis" },
+    { img: HeadPhone, hover: fone, nome: "HeadPhones" },
+    { img: tenisIcon, hover: sapato2, nome: "Tênis" },
   ];
 
   return (
