@@ -11,7 +11,7 @@ export default function MenuLateralInformacoes() {
           <Link to="/meuspedidos">Meus Pedidos</Link>
         </li>
         <li className="text-black-700 font-semibold  cursor-pointer border-b-2 border-gray-300 pl-3 pb-5 hover:text-pink-600 hover:font-bold">
-          Minhas Informações
+          <Link to="/minhasinformacoes">Minhas Informações</Link>
         </li>
         <li className="text-black-700 font-semibold cursor-pointer pl-3  hover:text-pink-600 hover:font-bold">
           Métodos de Pagamento

@@ -1,5 +1,5 @@
 import LoginForm from "./LoginForm";
-import CadastroLoginBottomForm from "./CadastroCriarContaBottomForm";
+import CadastroLoginBottomForm from "./CadastroLoginBottomForm";
 import CredentialImage from "./CredentialImage";
 import LoginTopForm from "./LoginTopForm";
 
