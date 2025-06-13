@@ -24,11 +24,11 @@ export default function HeaderDesktop() {
         </div>
 
         {/* Ações: cadastro, login, carrinho */}
-        <div className="flex items-center gap-6 flex-shrink-0">
-          <a href="#" className="text-base text-[#474747]">
+        <div className="flex items-center gap-6 flex-shrink-0  ">
+          <a href="#" className="text-base text-[#474747] underline">
             <Link to="/cadastroCompleto">Cadastre-se</Link>
           </a>
-          <button className="bg-[#c92071] text-white px-6 py-3 rounded text-base hover:text-pink-600 hover:bg-white transition duration-300 cursor-pointer">
+          <button className="bg-[#c92071] text-white px-8 py-2 rounded-xl mr-10 text-base hover:text-pink-600 hover:bg-white transition duration-300 cursor-pointer">
             Entrar
           </button>
           <i className="fa-solid fa-cart-shopping text-2xl text-pink-600 cursor-pointer"></i>

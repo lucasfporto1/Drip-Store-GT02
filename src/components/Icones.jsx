@@ -6,7 +6,7 @@ import HeadPhone from "../assets/imagens/headphone-icon.png";
 import tenisIcon from "../assets/imagens/Tenis-icon.png"
 
 
-import sapato2 from "../assets/imagens/sapato2.png";
+import sapato2 from "../assets/imagens/tenis3.png";
 import calça2 from "../assets/imagens/calça2.png";
 import fone from "../assets/imagens/fone.png";
 import camisa2 from "../assets/imagens/camisa2.png";
