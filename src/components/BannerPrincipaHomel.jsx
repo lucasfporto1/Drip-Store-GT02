@@ -16,12 +16,13 @@ export default function BannerPrincipalHome() {
             Consequat culpa exercitation mollit nisi excepteur do do tempor
             laboris eiusmod irure consectetur.
           </p>
-          <a
-            href="#"
+          <Link
+            to="/detalhes"
             className="inline-block bg-[#C92071] text-white px-10 py-3 rounded-lg font-semibold hover:opacity-90 transition"
           >
-            <Link to="/detalhes"> Ver ofertas</Link>
-          </a>
+            {" "}
+            Ver ofertas
+          </Link>
         </div>
         <img
           src={TenisVermelho}

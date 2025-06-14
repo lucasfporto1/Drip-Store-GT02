@@ -1,12 +1,13 @@
 import Popper from '../assets/imagens/popper.gif';
 import tenisvermelho from '../assets/imagens/tenisvermelho.png';
+import { Link } from "react-router-dom";
 
 export default function FinalPagamento() {
 
 return(
 
   <section>
-    <div className=" bg-gray-100 py-10 px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center">
+    <div className="pt-24 bg-gray-100 py-10 px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center">
   {/* <!-- Container principal --> */}
   <div className="bg-white w-full max-w-3xl rounded-lg shadow-md p-6 sm:p-10">
     {/* <!-- Ícone e título --> */}
@@ -68,16 +69,17 @@ return(
 
     {/* <!-- Botões --> */}
     <div className="mt-6 text-center text-sm text-gray-600">
-      <a href="#" class="underline ">Imprimir Recibo</a>
+    <Link to="/" className="text-sm underline">Imprimir Recibo</Link>
     </div>
   
    
   </div>
   
 <div className="w-full flex justify-center mt-3">
-  <button className=" w-full max-w-[450px] sm:max-w-[600px] md:max-w-[700px] py-3 bg-[#F9A826] hover:bg-[#f89c17] text-white rounded transition duration-300 cursor-pointer text-center">
+
+ <Link to="/" className=" w-full max-w-[450px] sm:max-w-[600px] md:max-w-[700px] py-3 bg-[#F9A826] hover:bg-[#f89c17] text-white rounded transition duration-300 cursor-pointer text-center">
     Voltar para Home
-  </button>
+  </Link>
 
   
 

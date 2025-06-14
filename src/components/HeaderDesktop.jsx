@@ -7,12 +7,11 @@ export default function HeaderDesktop() {
       {/* Linha superior */}
       <div className="w-full px-8 xl:px-16 flex items-center justify-between py-6 gap-6">
         {/* Logo */}
-        <a href="/">
+        <Link to="/">
           <div className="flex-shrink-0 text-pink-600 font-bold text-2xl cursor-pointer">
             <img src={Logo} alt="Logo" className="w-40" />
           </div>
-        </a>
-
+        </Link>
         {/* Campo de busca */}
         <div className="flex-grow max-w-[600px] mx-4 flex">
           <input
@@ -27,15 +26,16 @@ export default function HeaderDesktop() {
 
         {/* Ações: cadastro, login, carrinho */}
         <div className="flex items-center gap-6 flex-shrink-0">
-          <a href="#" className="text-base text-[#474747]">
-            <Link to="/cadastroCompleto">Cadastre-se</Link>
-          </a>
-          <button className="bg-[#c92071] text-white px-6 py-3 rounded text-base hover:text-pink-600 hover:bg-white transition duration-300 cursor-pointer">
-            <Link to="/login">Entrar</Link>
-          </button>
-          <a href="meucarrinho">
+          <Link to="/cadastroCompleto">Cadastre-se</Link>
+          <Link
+            to="/login"
+            className="bg-[#c92071] text-white px-6 py-3 rounded text-base hover:text-pink-600 hover:bg-white transition duration-300 cursor-pointer"
+          >
+            Entrar
+          </Link>
+          <Link to="/meucarrinho">
             <i className="fa-solid fa-cart-shopping text-2xl text-pink-600 cursor-pointer"></i>
-          </a>
+          </Link>
         </div>
       </div>
 
@@ -43,24 +43,33 @@ export default function HeaderDesktop() {
       <nav className="w-full px-8 xl:px-16 pb-4">
         <ul className="flex justify-left gap-8 text-base">
           <li>
-            <a href="#" className="hover:text-pink-600 hover:border-b-2">
-              <Link to="/#">Home</Link>
-            </a>
+            <Link to="/" className="hover:text-pink-600 hover:border-b-2">
+              Home
+            </Link>
           </li>
           <li>
-            <a href="#" className="hover:text-pink-600 hover:border-b-2">
-              <Link to="/produtos">Produtos</Link>
-            </a>
+            <Link
+              to="/produtos"
+              className="hover:text-pink-600 hover:border-b-2"
+            >
+              Produtos
+            </Link>
           </li>
           <li>
-            <a href="#" className="hover:text-pink-600 hover:border-b-2">
-              <Link to="/categorias">Categorias</Link>
-            </a>
+            <Link
+              to="/categorias"
+              className="hover:text-pink-600 hover:border-b-2"
+            >
+              Categorias
+            </Link>
           </li>
           <li>
-            <a href="#" className="hover:text-pink-600 hover:border-b-2">
-              <Link to="/meuspedidos">Meus Pedidos</Link>
-            </a>
+            <Link
+              to="/meuspedidos"
+              className="hover:text-pink-600 hover:border-b-2"
+            >
+              Meus Pedidos
+            </Link>
           </li>
         </ul>
       </nav>
