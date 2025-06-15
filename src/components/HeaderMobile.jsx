@@ -22,8 +22,6 @@ export default function Header() {
      if (location.pathname === "/finalPagamento") {
     menuContent = <HamburguerPedidos />;}
   
-    console.log("Rota atual:", location.pathname);
-console.log("menuContent:", menuContent);
 
   return (
     <>

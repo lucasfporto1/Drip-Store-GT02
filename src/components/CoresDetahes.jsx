@@ -8,20 +8,20 @@ return(
             <h3 className="font-medium mb-2">Cor</h3>
             <div className="flex gap-2">
               <label>
-                <input type="radio" name="cor" class="peer hidden" />
-                <div class="w-6 h-6 rounded-full bg-pink-300 border-2 peer-checked:ring-2 peer-checked:ring-black hover:scale-110 cursor-pointer transition"></div>
+                <input type="radio" name="cor" className="peer hidden" />
+                <div className="w-6 h-6 rounded-full bg-pink-300 border-2 peer-checked:ring-2 peer-checked:ring-black hover:scale-110 cursor-pointer transition"></div>
               </label>
               <label>
-                <input type="radio" name="cor" class="peer hidden" />
-                <div class="w-6 h-6 rounded-full bg-blue-300 border-2 peer-checked:ring-2 peer-checked:ring-black hover:scale-110 cursor-pointer transition"></div>
+                <input type="radio" name="cor" className="peer hidden" />
+                <div className="w-6 h-6 rounded-full bg-blue-300 border-2 peer-checked:ring-2 peer-checked:ring-black hover:scale-110 cursor-pointer transition"></div>
               </label>
               <label>
-                <input type="radio" name="cor" class="peer hidden" />
-                <div class="w-6 h-6 rounded-full bg-gray-600 border-2 peer-checked:ring-2 peer-checked:ring-black hover:scale-110 cursor-pointer transition"></div>
+                <input type="radio" name="cor" className="peer hidden" />
+                <div className="w-6 h-6 rounded-full bg-gray-600 border-2 peer-checked:ring-2 peer-checked:ring-black hover:scale-110 cursor-pointer transition"></div>
               </label>
               <label>
-                <input type="radio" name="cor" class="peer hidden" />
-                <div class="w-6 h-6 rounded-full bg-purple-800 border-2 peer-checked:ring-2 peer-checked:ring-black hover:scale-110 cursor-pointer transition"></div>
+                <input type="radio" name="cor" className="peer hidden" />
+                <div className="w-6 h-6 rounded-full bg-purple-800 border-2 peer-checked:ring-2 peer-checked:ring-black hover:scale-110 cursor-pointer transition"></div>
               </label>
             </div>
           </div>

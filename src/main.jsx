@@ -10,7 +10,7 @@ import MinhasInformacoes from "./pages/MinhaInformacoes.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import FinalPagamento from "./pages/FinalPagamento.jsx";
 import MeusPedidos from "./pages/MeusPedidos.jsx";
-import ConfiguracaoCompra from "./pages/configuracaoCompra.jsx";
+import ConfiguracaoCompra from "./pages/ConfiguracaoCompra.jsx"
 import DetalheProd from "./pages/detalheProd.jsx";
 import MeuCarrinhoPage from "./pages/MeuCarrinhoPage.jsx";
 import LayoutWrapper from "./components/LayoutWrapper.jsx";
