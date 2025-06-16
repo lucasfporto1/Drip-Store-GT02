@@ -3,9 +3,9 @@ import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-import TenisVermelho from '../assets/imagens/tenisvermelho.png';
-import TenisPreto from '../assets/imagens/sptazulxbonus.png';
-import TenisJordan from '../assets/imagens/tenisazul2.png';
+import TenisVermelho from '../assets/imagens/Tenis-preto6.png';
+import TenisPreto from '../assets/imagens/tenisvermelho5.png';
+import TenisJordan from '../assets/imagens/tenisvermelho4.png';
 
 export default function BannerPrincipalHome() {
   return (

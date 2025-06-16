@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import TenisJordan from "../assets/imagens/Tenis-jordan.png";
 import tenis from "../assets/tenis.png";
 import TenisPreto from "../assets/imagens/Tenis-preto.png";
@@ -12,6 +13,7 @@ import camisa2 from "../assets/imagens/camisa2.png";
 import calça2 from "../assets/imagens/calça2.png";
 import sapato2 from "../assets/imagens/sapato2.png";
 import Icones from "../components/icones";
+import ProdutosEmAlta from "../components/produtosEmAlta.jsx";
 
 
 export default function HomePage() {
@@ -110,53 +112,9 @@ export default function HomePage() {
 
       {/* Categorias */}
      <Icones />
-      {/* Produtos em Alta */}
-      <section className="flex justify-center py-10">
-        <div className="w-[92%] flex flex-col gap-4">
-          <div className="flex justify-between items-center">
-            <h4 className="font-bold text-xl tracking-[0.04rem] text-zinc-600">
-              Produtos em alta
-            </h4>
-            <a className="text-[#C92071] font-medium hover:underline" href="#">
-              Ver todos
-            </a>
-          </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 flex-1">
-            {tenisList.map((item) => (
-              <div key={item.id} className="cursor-pointer">
-                <div className="bg-white p-4 shadow-sm relative">
-                  {item.discount > 0 && (
-                    <span className="absolute top-3 left-3 bg-[#E7FF86] text-[#474747] text-xs font-bold px-2 py-1 rounded-full">
-                      {item.discount}% OFF
-                    </span>
-                  )}
-                  <img
-                    src={item.imageUrl}
-                    alt={`Imagem do ${item.name}`}
-                    className="mx-auto mb-4 w-full"
-                  />
-                </div>
-                <div className="mt-2 px-1">
-                  <p className="text-[#8F8F8F] text-sm font-semibold">Tênis</p>
-                  <p className="text-[#474747] font-semibold text-sm leading-tight">
-                    {item.name}
-                  </p>
-                  <p className="text-base mt-1">
-                    {item.discount > 0 && (
-                      <span className="line-through text-[#8f8f8f] mr-2">
-                        {item.originalPrice}
-                      </span>
-                    )}
-                    <span className="text-[#1f1f1f] font-bold">
-                      {item.price}
-                    </span>
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+
+     {/* Produtos em alta */}
+     <ProdutosEmAlta/>
 
       {/* Destaque Air Jordan */}
       <section className="flex justify-center">
