@@ -31,8 +31,8 @@ export default function HomePage() {
       {/* Banner Principal */}
       <BannerPrincipalHome />
       {/* Coleções em Destaque */}
-      <section className="flex flex-row justify-center py-10">
-        <div className="w-[92%] flex gap-5">
+      <section className=" flex flex-row justify-center py-10 ">
+        <div className="w-[92%] flex flex-col md:flex-row gap-5">
           {/* Coleção 01 */}
           <div className="flex flex-row bg-[#d8e3f2] w-full h-[15rem] rounded-[10px] justify-between pt-5 pl-5 overflow-hidden relative">
             <div className="flex flex-col items-start gap-3 z-20">
