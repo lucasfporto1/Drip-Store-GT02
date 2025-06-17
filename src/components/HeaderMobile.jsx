@@ -10,30 +10,36 @@ export default function Header() {
 
   let menuContent;
   if (location.pathname === "/meuspedidos") {
-    menuContent = <HamburguerPedidos />;}
-     if (location.pathname === "/minhasinformacoes") {
-    menuContent = <HamburguerPedidos />;}
-     if (location.pathname === "/") {
-    menuContent = <HamburguerPedidos />;}
-     if (location.pathname === "/produtos") {
-    menuContent = <HamburguerPedidos />;}
-      if (location.pathname === "/configuracaoCompra") {
-    menuContent = <HamburguerPedidos />;}
-     if (location.pathname === "/finalPagamento") {
-    menuContent = <HamburguerPedidos />;}
-  
+    menuContent = <HamburguerPedidos />;
+  }
+  if (location.pathname === "/minhasinformacoes") {
+    menuContent = <HamburguerPedidos />;
+  }
+  if (location.pathname === "/") {
+    menuContent = <HamburguerPedidos />;
+  }
+  if (location.pathname === "/produtos") {
+    menuContent = <HamburguerPedidos />;
+  }
+  if (location.pathname === "/configuracaoCompra") {
+    menuContent = <HamburguerPedidos />;
+  }
+  if (location.pathname === "/finalPagamento") {
+    menuContent = <HamburguerPedidos />;
+  }
+  if (location.pathname === "/detalhes") {
+    menuContent = <HamburguerPedidos />;
+  }
 
   return (
     <>
       <header className="flex justify-center p-5 z-30 relative">
         <div className="flex justify-between items-center w-[99%] gap-5">
-         
           <i
             className="fa-solid fa-bars text-2xl block cursor-pointer md:hidden"
             onClick={() => setOpen(true)}
           ></i>
 
-      
           <img className="w-36 ml-8" src={logo} alt="logo-digital-store" />
 
           <div className="flex items-center gap-4">
@@ -48,8 +54,5 @@ export default function Header() {
         {menuContent}
       </DrawerWrapper>
     </>
-
   );
-
- 
 }
