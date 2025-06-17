@@ -50,7 +50,7 @@ export default function BannerPrincipalHome() {
 
         {/* Bolinhas dentro de retângulo bem estilizado e lindão */}
         <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2">
-          <div className="bg-white/80 px-4 py-2 rounded-xl shadow">
+          <div className="bg-white/80 px-4 py-2 rounded-xl shadow ">
             {/* bullets e estudar sobre depois */}
             <div className="swiper-pagination" />
           </div>
