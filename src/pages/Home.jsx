@@ -46,7 +46,7 @@ export default function HomePage() {
               </h2>
               <a
                 className="bg-white py-3 px-11 rounded-[10px] text-[#C92071] capitalize font-semibold text-[1.1rem] hover:bg-[#C92071] hover:text-white"
-                href="#"
+                href="produtos"
               >
                 comprar
               </a>
@@ -71,7 +71,7 @@ export default function HomePage() {
               </h2>
               <a
                 className="bg-white py-3 px-11 rounded-[10px] text-[#C92071] capitalize font-semibold text-[1.1rem] hover:bg-[#C92071] hover:text-white"
-                href="#"
+                href="produtos"
               >
                 comprar
               </a>
@@ -96,7 +96,7 @@ export default function HomePage() {
               </h2>
               <a
                 className="bg-white py-3 px-11 rounded-[10px] text-[#C92071] capitalize font-semibold text-[1.1rem] hover:bg-[#C92071] hover:text-white"
-                href="#"
+                href="produtos"
               >
                 comprar
               </a>
@@ -138,7 +138,7 @@ export default function HomePage() {
               nenhuma outra. Disponível por tempo limitado.
             </p>
             <a
-              href="#"
+              href="produtos"
               className="bg-[#C92071] text-white py-2 px-20 rounded-[10px] text-lg font-semibold w-fit mx-auto md:mx-0 hover:shadow-lg hover:opacity-90 transition"
             >
               Ver Oferta

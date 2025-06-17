@@ -2,6 +2,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import { Link } from "react-router-dom";
 
 import TenisVermelho from '../assets/imagens/Tenis-preto6.png';
 import TenisPreto from '../assets/imagens/tenisvermelho5.png';
@@ -31,12 +32,10 @@ export default function BannerPrincipalHome() {
                     Consequat culpa exercitation mollit nisi excepteur do do
                     tempor laboris eiusmod irure consectetur.
                   </p>
-                  <a
-                    href="#"
-                    className="inline-block bg-[#C92071] text-white px-10 py-3 rounded-lg font-semibold hover:opacity-90 transition"
-                  >
-                    Ver ofertas
-                  </a>
+                <Link to="/detalhes" className="inline-block bg-[#C92071] text-white px-10 py-3 rounded-lg font-semibold hover:opacity-90 transition">
+                   Ver ofertas
+                </Link>
+
                 </div>
                 <img
                   src={imagem}
