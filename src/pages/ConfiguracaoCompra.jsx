@@ -20,7 +20,7 @@ export default function ConfiguracaoCompra() {
               htmlFor="nome"
               className="flex flex-col gap-2 text-[#474747] font-bold tracking-[0.75px] text-sm md:text-lg"
             >
-              Nome Completo *
+              Nome Completo :
               <input
                 className="bg-zinc-100 h-12 placeholder-[#666666] p-3 outline-none font-normal"
                 type="text"
@@ -35,7 +35,7 @@ export default function ConfiguracaoCompra() {
               htmlFor="cpf"
               className="flex flex-col gap-2 text-[#474747] font-bold tracking-[0.75px] text-sm md:text-lg"
             >
-              CPF *
+              CPF :
               <input
                 className="bg-zinc-100 h-12 placeholder-[#666666] p-3 outline-none font-normal"
                 type="text"
@@ -51,7 +51,7 @@ export default function ConfiguracaoCompra() {
               htmlFor="email"
               className="flex flex-col gap-2 text-[#474747] font-bold tracking-[0.75px] text-sm md:text-lg"
             >
-              E-mail *
+              E-mail :
               <input
                 className="bg-zinc-100 h-12 placeholder-[#666666] p-3 outline-none font-normal"
                 type="email"
@@ -66,7 +66,7 @@ export default function ConfiguracaoCompra() {
               htmlFor="celular"
               className="flex flex-col gap-2 text-[#474747] font-bold tracking-[0.75px] text-sm md:text-lg"
             >
-              Celular *
+              Celular :
               <input
                 className="bg-zinc-100 h-12 placeholder-[#666666] p-3 outline-none font-normal"
                 type="tel"
@@ -89,7 +89,7 @@ export default function ConfiguracaoCompra() {
               htmlFor="endereco"
               className="flex flex-col gap-2 text-[#474747] font-bold tracking-[0.75px] text-sm md:text-lg"
             >
-              Endereço *
+              Endereço :
               <input
                 className="bg-zinc-100 h-12 placeholder-[#666666] p-3 outline-none font-normal"
                 type="text"
@@ -104,7 +104,7 @@ export default function ConfiguracaoCompra() {
               htmlFor="bairro"
               className="flex flex-col gap-2 text-[#474747] font-bold tracking-[0.75px] text-sm md:text-lg"
             >
-              Bairro *
+              Bairro :
               <input
                 className="bg-zinc-100 h-12 placeholder-[#666666] p-3 outline-none font-normal"
                 type="text"
@@ -119,7 +119,7 @@ export default function ConfiguracaoCompra() {
               htmlFor="cidade"
               className="flex flex-col gap-2 text-[#474747] font-bold tracking-[0.75px] text-sm md:text-lg"
             >
-              Cidade *
+              Cidade :
               <input
                 className="bg-zinc-100 h-12 placeholder-[#666666] p-3 outline-none font-normal"
                 type="text"
@@ -134,7 +134,7 @@ export default function ConfiguracaoCompra() {
               htmlFor="cep"
               className="flex flex-col gap-2 text-[#474747] font-bold tracking-[0.75px] text-sm md:text-lg"
             >
-              CEP *
+              CEP :
               <input
                 className="bg-zinc-100 h-12 placeholder-[#666666] p-3 outline-none font-normal"
                 type="text"
@@ -149,7 +149,7 @@ export default function ConfiguracaoCompra() {
               htmlFor="complemento"
               className="flex flex-col gap-2 text-[#474747] font-bold tracking-[0.75px] text-sm md:text-lg"
             >
-              Complemento
+              Complemento :
               <input
                 className="bg-zinc-100 h-12 placeholder-[#666666] p-3 outline-none font-normal"
                 type="text"
@@ -161,80 +161,90 @@ export default function ConfiguracaoCompra() {
           </section>
 
           {/* <!-- Informações de Pagamento --> */}
-          <section className="bg-white flex flex-col gap-3 py-8 px-8">
-            <h2 className="text-[#474747] font-bold text-lg tracking-[0.75px]">
+          <section className="bg-white flex flex-col gap-4 py-8 px-8">
+            <h2 className="text-[#474747] font-bold text-lg tracking-[0.95px]">
               Informações de Pagamento
             </h2>
-            <hr className="bg-[#CCCCCC] h-[0.1rem] border-0" />
-
-            <h4 className="text-[#474747] font-bold my-2">
+            <hr className="bg-[#CCCCCC] h-[0.10rem] border-0" />
+            <h4 className="text-[#373737] font-bold my-2">
               Forma de Pagamento
             </h4>
-            <label className="flex items-center flex-row gap-2">
-              <input
-                className="accent-[#C92071] w-5 h-5"
-                type="radio"
-                name="pagamento"
-                value="cartao"
-              />
-              Cartão de Crédito
-            </label>
-
-            <label className="flex items-center flex-row gap-2 mb-3">
-              <input
-                className="accent-[#C92071] w-5 h-5"
-                type="radio"
-                name="pagamento"
-                value="boleto"
-              />
-              Boleto Bancário
-            </label>
-
-            <div id="pagamento-cartao" className="flex flex-col gap-4">
-              <label className="flex flex-col gap-2 text-[#474747] font-bold tracking-[0.75px] text-sm md:text-lg">
-                Nome do Cartão *
+            <div className="flex flex-row gap-10 ">
+              <label className="text-base font-semibold flex items-center flex-row gap-2 mb-1">
                 <input
-                  className="bg-zinc-100 h-12 placeholder-[#666666] p-3 outline-none font-normal"
-                  type="text"
-                  name="nome_cartao"
-                  placeholder="Insira o nome do Cartão"
-                  required
+                  className="accent-pink-600 w-5 h-5"
+                  type="radio"
+                  name="pagamento"
+                  value="cartao"
                 />
+                Cartão de Crédito
+              </label>
+              <label className="text-base font-semibold flex items-center flex-row gap-2 mb-1">
+                <input
+                  className="accent-pink-600 w-5 h-5"
+                  type="radio"
+                  name="pagamento"
+                  value="boleto"
+                />
+                Boleto Bancário
               </label>
 
-              <label className="flex flex-col gap-2 text-[#474747] font-bold tracking-[0.75px] text-sm md:text-lg">
-                Número do Cartão *
+              <label className="text-base font-semibold flex items-center flex-row gap-2 mb-1">
                 <input
-                  className="bg-zinc-100 h-12 placeholder-[#666666] p-3 outline-none font-normal"
-                  type="text"
-                  name="numero_cartao"
-                  placeholder="Insira o número do Cartão"
-                  required
+                  className="accent-pink-600 w-5 h-5"
+                  type="radio"
+                  name="pagamento"
+                  value="PIX"
                 />
-              </label>
-
-              <label className="flex flex-col gap-2 text-[#474747] font-bold tracking-[0.75px] text-sm md:text-lg">
-                Data de Validade do Cartão *
-                <input
-                  className="bg-zinc-100 h-12 placeholder-[#666666] p-3 outline-none font-normal"
-                  type="text"
-                  name="validade_cartao"
-                  placeholder="Insira a validade do Cartão"
-                  required
-                />
-              </label>
-
-              <label className="flex flex-col gap-2 text-[#474747] font-bold tracking-[0.75px] text-sm md:text-lg">
-                CVV *
-                <input
-                  className="bg-zinc-100 h-12 placeholder-[#666666] p-3 outline-none text-[#474747] font-normal"
-                  type="text"
-                  name="cvv"
-                  placeholder="CVV"
-                  required
-                />
+                PIX
               </label>
             </div>
+            
+              <div id="pagamento-cartao" className="flex flex-col gap-5">
+                <label className="flex flex-col gap-2 text-[#474747] font-bold tracking-[0.80px] text-sm md:text-lg">
+                  Nome do Cartão :
+                  <input
+                    className="bg-zinc-200 h-12 placeholder-[#666666] p-3 outline-none font-normal"
+                    type="text"
+                    name="nome_cartao"
+                    placeholder="Insira o nome do Cartão"
+                    required
+                  />
+                </label>
+
+                <label className="flex flex-col gap-2 text-[#474747] font-bold tracking-[0.75px] text-sm md:text-lg">
+                  Número do Cartão :
+                  <input
+                    className="bg-zinc-200 h-12 placeholder-[#666666] p-3 outline-none font-normal"
+                    type="text"
+                    name="numero_cartao"
+                    placeholder="Insira o número do Cartão"
+                    required
+                  />
+                </label>
+
+                <label className="flex flex-col gap-2 text-[#474747] font-bold tracking-[0.75px] text-sm md:text-lg">
+                  Data de Validade do Cartão :
+                  <input
+                    className="bg-zinc-200 h-12 placeholder-[#666666] p-3 outline-none font-normal"
+                    type="text"
+                    name="validade_cartao"
+                    placeholder="Insira a validade do Cartão"
+                    required
+                  />
+                </label>
+
+                <label className="flex flex-col gap-2 text-[#474747] font-bold tracking-[0.75px] text-sm md:text-lg">
+                  CVV :
+                  <input
+                    className="bg-zinc-200 h-12 placeholder-[#666666] p-3 outline-none text-[#474747] font-normal"
+                    type="text"
+                    name="cvv"
+                    placeholder="CVV"
+                    required
+                  />
+                </label>
+              </div>
           </section>
 
           {/* <!-- Total a Pagar --> */}
@@ -252,7 +262,7 @@ export default function ConfiguracaoCompra() {
                 </div>
 
                 <p className="text-end font-medium text-zinc-400 text-lg">
-                  ou 10x de R$ 21,00 sem juros
+                  ou 10x de R$ 21,90 sem juros
                 </p>
               </div>
 
@@ -272,11 +282,11 @@ export default function ConfiguracaoCompra() {
             Resumo
           </h2>
 
-          <hr className="bg-[#CCCCCC] h-[0.1rem] border-0" />
-          <div className="flex flex-row items-center h-[5.7rem] gap-4 md:h-[8rem] md:my-3 md:justify-center xl:my-1">
-            <div className="bg-[#E2E3FF] p-3 h-[5rem] flex items-center justify-center w-50 rounded-md md:h-[8rem] xl:h-[4.7rem] xl:w-40">
+          <hr className="bg-[#CCCCCC] h-[0.2rem] border-0" />
+          <div className="flex flex-row items-center h-[6.7rem] gap-4 md:h-[8rem] md:my-3 md:justify-center xl:my-1">
+            <div className="bg-[#E2E3FF] p-6 h-[5rem] flex items-center justify-center w-60 rounded-md md:h-[8rem] xl:h-[4.7rem] xl:w-50">
               <img
-                className="rotate-15 w-20 md:w-30 xl:w-20"
+                className="rotate-10 w-20 md:w-30 xl:w-60"
                 src={tenisvermelho}
                 alt="tenisvermelho"
               />
@@ -292,7 +302,7 @@ export default function ConfiguracaoCompra() {
               <h4 className="text-[#8F8F8F] text-lg font-medium md:text-2xl xl:text-xl">
                 Subtotal:
               </h4>
-              <p className="text-lg font-medium md:text-2xl xl:text-xl">
+              <p className="text-lg font-medium md:text-4xl xl:text-xl">
                 R$ 219,00
               </p>
             </div>
@@ -316,19 +326,19 @@ export default function ConfiguracaoCompra() {
             </div>
           </div>
 
-          <div className="bg-amber-300/10 border-2 rounded-sm border-amber-200/50 h-30 px-9 py-7 flex flex-col gap-2 md:h-40 md:py-9 xl:h-35">
+          <div className="bg-amber-200/10 border-2 rounded-sm border-amber-200/50 h-30 px-9 py-7 flex flex-col gap-2 md:h-40 md:py-9 xl:h-40">
             <div className="text-xl font-bold flex flex-row justify-between md:text-3xl xl:text-2xl">
               <h4>Total</h4>
               <p>R$ 219,00</p>
             </div>
 
-            <p className="text-end font-medium text-zinc-400 text-sm md:text-xl xl:text-lg">
-              ou 10x de R$ 21,00 sem juros
+            <p className="text-end font-medium text-zinc-600 text-sm md:text-xl xl:text-lg">
+              ou 10x de R$ 21,90 sem juros
             </p>
           </div>
 
           <button
-            className="bg-amber-400 py-6 text-lg mt-5 text-white font-bold tracking-[0.90px] rounded-xl hover:bg-amber-500 hover:cursor-pointer md:text-2xl xl:text-xl"
+            className="bg-amber-400 py-7 text-lg mt-5 text-white font-bold tracking-[2px] rounded-xl hover:bg-amber-600 hover:cursor-pointer md:text-2xl xl:text-xl"
             type="submit"
           >
             Realizar Pagamento
@@ -338,7 +348,7 @@ export default function ConfiguracaoCompra() {
 
       {/* <!-- Total a Pagar --> */}
       <section className="bg-white flex justify-center py-5 xl:hidden">
-        <div className="flex flex-col w-[85%] py-5">
+        <div className="flex flex-col w-[90%] py-8">
           <div className="h-25 flex flex-col gap-2">
             <div className="text-2xl font-bold flex flex-row justify-between md:text-3xl">
               <h4>Total</h4>
