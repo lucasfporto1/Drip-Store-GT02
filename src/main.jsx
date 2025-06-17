@@ -10,11 +10,12 @@ import MinhasInformacoes from "./pages/MinhaInformacoes.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import FinalPagamento from "./pages/FinalPagamento.jsx";
 import MeusPedidos from "./pages/MeusPedidos.jsx";
-import ConfiguracaoCompra from "./pages/ConfiguracaoCompra.jsx";
+import ConfiguracaoCompra from "./pages/ConfiguracaoCompra.jsx"
 import DetalheProd from "./pages/detalheProd.jsx";
 import MeuCarrinhoPage from "./pages/MeuCarrinhoPage.jsx";
 import LayoutWrapper from "./components/LayoutWrapper.jsx";
-import HamburguerPedidos from "./pages/HamburguerPedidos.jsx";
+
+
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -30,7 +31,6 @@ createRoot(document.getElementById("root")).render(
           <Route path="/minhasinformacoes" element={<MinhasInformacoes />} />
           <Route path="/finalPagamento" element={<FinalPagamento />} />
           <Route path="/meuspedidos" element={<MeusPedidos />} />
-          <Route path="/hamburguerPedidos" element={<HamburguerPedidos />} />
           <Route path="/detalhes" element={<DetalheProd />} />
           <Route path="/meucarrinho" element={<MeuCarrinhoPage />} />
         </Routes>
