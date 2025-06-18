@@ -1,1 +1,1 @@
-# DripStore-GT02
+Drip-Store-GT02
