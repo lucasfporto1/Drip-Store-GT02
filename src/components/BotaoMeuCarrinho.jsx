@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function BotaoMeuCarrinho() {
   return (
     <div className="bg-white bottom-0 left-0 right-0 p-4 shadow-inner z-10 lg:hidden">
@@ -10,9 +12,12 @@ export default function BotaoMeuCarrinho() {
           Em até 10x de R$ 21,90 sem juros
         </p>
       </div>
-      <button className="w-full bg-[#f6aa1c] text-white py-3 rounded-xl hover:bg-orange-500 cursor-pointer font-semibold">
+      <Link
+        to="/configuracaoCompra"
+        className="w-full bg-[#f6aa1c] text-white py-3 rounded-xl hover:bg-orange-500 cursor-pointer font-semibold"
+      >
         Continuar
-      </button>
+      </Link>
     </div>
   );
 }

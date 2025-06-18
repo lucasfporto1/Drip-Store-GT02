@@ -1,6 +1,8 @@
 import FormularioCompra from "../components/FormularioCompra";
 import ResumoPedido from "../components/ResumoPedido";
 import ResumoTotalMobile from "../components/ResumoTotalMobile";
+import TenisVermelho from "../assets/imagens/tenisvermelho4.png";
+import { Link } from "react-router-dom";
 
 export default function ConfiguracaoCompra() {
   return (
@@ -44,7 +46,7 @@ export default function ConfiguracaoCompra() {
                 name="cpf"
                 id="cpf"
                 placeholder="Insira seu CPF"
-                maxlength="14"
+                maxLength="14"
                 required
               />
             </label>
@@ -201,52 +203,52 @@ export default function ConfiguracaoCompra() {
                 PIX
               </label>
             </div>
-            
-              <div id="pagamento-cartao" className="flex flex-col gap-5">
-                <label className="flex flex-col gap-2 text-[#474747] font-bold tracking-[0.80px] text-sm md:text-lg">
-                  Nome do Cartão :
-                  <input
-                    className="bg-zinc-200 h-12 placeholder-[#666666] p-3 outline-none font-normal"
-                    type="text"
-                    name="nome_cartao"
-                    placeholder="Insira o nome do Cartão"
-                    required
-                  />
-                </label>
 
-                <label className="flex flex-col gap-2 text-[#474747] font-bold tracking-[0.75px] text-sm md:text-lg">
-                  Número do Cartão :
-                  <input
-                    className="bg-zinc-200 h-12 placeholder-[#666666] p-3 outline-none font-normal"
-                    type="text"
-                    name="numero_cartao"
-                    placeholder="Insira o número do Cartão"
-                    required
-                  />
-                </label>
+            <div id="pagamento-cartao" className="flex flex-col gap-5">
+              <label className="flex flex-col gap-2 text-[#474747] font-bold tracking-[0.80px] text-sm md:text-lg">
+                Nome do Cartão :
+                <input
+                  className="bg-zinc-200 h-12 placeholder-[#666666] p-3 outline-none font-normal"
+                  type="text"
+                  name="nome_cartao"
+                  placeholder="Insira o nome do Cartão"
+                  required
+                />
+              </label>
 
-                <label className="flex flex-col gap-2 text-[#474747] font-bold tracking-[0.75px] text-sm md:text-lg">
-                  Data de Validade do Cartão :
-                  <input
-                    className="bg-zinc-200 h-12 placeholder-[#666666] p-3 outline-none font-normal"
-                    type="text"
-                    name="validade_cartao"
-                    placeholder="Insira a validade do Cartão"
-                    required
-                  />
-                </label>
+              <label className="flex flex-col gap-2 text-[#474747] font-bold tracking-[0.75px] text-sm md:text-lg">
+                Número do Cartão :
+                <input
+                  className="bg-zinc-200 h-12 placeholder-[#666666] p-3 outline-none font-normal"
+                  type="text"
+                  name="numero_cartao"
+                  placeholder="Insira o número do Cartão"
+                  required
+                />
+              </label>
 
-                <label className="flex flex-col gap-2 text-[#474747] font-bold tracking-[0.75px] text-sm md:text-lg">
-                  CVV :
-                  <input
-                    className="bg-zinc-200 h-12 placeholder-[#666666] p-3 outline-none text-[#474747] font-normal"
-                    type="text"
-                    name="cvv"
-                    placeholder="CVV"
-                    required
-                  />
-                </label>
-              </div>
+              <label className="flex flex-col gap-2 text-[#474747] font-bold tracking-[0.75px] text-sm md:text-lg">
+                Data de Validade do Cartão :
+                <input
+                  className="bg-zinc-200 h-12 placeholder-[#666666] p-3 outline-none font-normal"
+                  type="text"
+                  name="validade_cartao"
+                  placeholder="Insira a validade do Cartão"
+                  required
+                />
+              </label>
+
+              <label className="flex flex-col gap-2 text-[#474747] font-bold tracking-[0.75px] text-sm md:text-lg">
+                CVV :
+                <input
+                  className="bg-zinc-200 h-12 placeholder-[#666666] p-3 outline-none text-[#474747] font-normal"
+                  type="text"
+                  name="cvv"
+                  placeholder="CVV"
+                  required
+                />
+              </label>
+            </div>
           </section>
 
           {/* <!-- Total a Pagar --> */}
@@ -289,7 +291,7 @@ export default function ConfiguracaoCompra() {
             <div className="bg-[#E2E3FF] p-6 h-[5rem] flex items-center justify-center w-60 rounded-md md:h-[8rem] xl:h-[4.7rem] xl:w-50">
               <img
                 className="rotate-10 w-20 md:w-30 xl:w-60"
-                src={tenisvermelho}
+                src={TenisVermelho}
                 alt="tenisvermelho"
               />
             </div>
@@ -338,13 +340,14 @@ export default function ConfiguracaoCompra() {
               ou 10x de R$ 21,90 sem juros
             </p>
           </div>
-
-          <button
-            className="bg-amber-400 py-7 text-lg mt-5 text-white font-bold tracking-[2px] rounded-xl hover:bg-amber-600 hover:cursor-pointer md:text-2xl xl:text-xl"
-            type="submit"
-          >
-            Realizar Pagamento
-          </button>
+          <Link to="/finalPagamento">
+            <button
+              className="bg-amber-400 py-7 text-lg mt-5 text-white font-bold tracking-[2px] rounded-xl hover:bg-amber-600 hover:cursor-pointer md:text-2xl xl:text-xl"
+              type="submit"
+            >
+              Realizar Pagamento
+            </button>
+          </Link>
         </section>
       </main>
 
@@ -361,13 +364,14 @@ export default function ConfiguracaoCompra() {
               ou 10x de R$ 21,00 sem juros
             </p>
           </div>
-
-          <button
-            className="bg-amber-400 py-4 text-lg text-white font-bold tracking-[0.90px] rounded-xl hover:bg-amber-500 hover:cursor-pointer md:text-2xl"
-            type="submit"
-          >
-            Realizar Pagamento
-          </button>
+          <Link to="/finalPagamento">
+            <button
+              className="bg-amber-400 py-4 text-lg text-white font-bold tracking-[0.90px] rounded-xl hover:bg-amber-500 hover:cursor-pointer md:text-2xl"
+              type="submit"
+            >
+              Realizar Pagamento
+            </button>
+          </Link>
         </div>
       </section>
     </div>

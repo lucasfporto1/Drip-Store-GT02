@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import GridDeProdutosMeuCarrinho from "./GridDeProdutosMeuCarrinho";
 
 export default function ProdutosRelacionadosMeuCarrinho() {
@@ -7,11 +8,13 @@ export default function ProdutosRelacionadosMeuCarrinho() {
         <h1 className="font-bold text-2xl lg:text-3xl text-[#474747]">
           Produtos Relacionados
         </h1>
-        <p className="text-[#c92071] text-xl lg:text-2xl cursor-pointer hover:border-b hover:border-[#c92071]">
-          Ver Todos ➝
-        </p>
-      </div>
-
+        <Link to="/Produtos">
+          <p className="text-[#c92071] text-xl lg:text-2xl cursor-pointer hover:border-b hover:border-[#c92071]">
+            Ver Todos ➝
+          </p>
+        </Link>
+      </div>{" "}
+      {/* ← FECHOU a <div> aqui corretamente */}
       <GridDeProdutosMeuCarrinho />
     </div>
   );
