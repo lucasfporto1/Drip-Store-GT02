@@ -7,10 +7,13 @@ export default function HeaderDesktop() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const nome = localStorage.getItem("usuario_nome");
-    if (nome) {
-      setUsuarioNome(nome);
-    }
+    const atualizarNome = () => {
+      const nome = localStorage.getItem("usuario_nome");
+      setUsuarioNome(nome || "");
+    };
+    atualizarNome();
+    window.addEventListener("usuarioLogado", atualizarNome);
+    return () => window.removeEventListener("usuarioLogado", atualizarNome);
   }, []);
 
   const handleLogout = () => {

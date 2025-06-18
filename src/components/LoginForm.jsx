@@ -39,6 +39,7 @@ export default function LoginForm() {
           localStorage.setItem("usuario_nome", perfil.nome);
           alert("Login bem-sucedido!");
           navigate("/");
+          window.location.reload(); // Força o refresh para atualizar o header
         } else {
           alert(perfil.message || "Erro ao buscar perfil");
         }
