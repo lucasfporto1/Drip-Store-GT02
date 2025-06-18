@@ -98,17 +98,6 @@ export default function CadastroCompletoInformacoesEntrega({
           />
         </div>
       </div>
-
-      {/* Checkbox */}
-      <label className="flex items-center gap-2 cursor-pointer mt-10">
-        <input
-          type="checkbox"
-          id="ofertas"
-          checked={values.ofertas}
-          onChange={onChange}
-          className="hidden peer"
-        />
-      </label>
     </div>
   );
 }

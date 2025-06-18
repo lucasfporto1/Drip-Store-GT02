@@ -1,13 +1,16 @@
 import { useState } from "react";
-import CadastroCompletoInformacoesPessoais from "../components/CadastroCompletoInformacoesPessoais";
-import CadastroCompletoInformacoesEntrega from "../components/CadastroCompletoInformacoesEntrega";
+import { useNavigate } from "react-router-dom";
+import CadastroCompletoInformacoesPessoais from "./CadastroCompletoInformacoesPessoais";
+import CadastroCompletoInformacoesEntrega from "./CadastroCompletoInformacoesEntrega";
 
 export default function CadastroCompletoForm() {
+  const navigate = useNavigate();
   const [pessoais, setPessoais] = useState({
     nome: "",
     cpf: "",
     email: "",
     celular: "",
+    senha: "",
   });
   const [entrega, setEntrega] = useState({
     endereco: "",
@@ -15,7 +18,7 @@ export default function CadastroCompletoForm() {
     cidade: "",
     cep: "",
     complemento: "",
-    ofertas: false,
+    receber_ofertas: false,
   });
 
   const handlePessoaisChange = (e) => {
@@ -33,17 +36,49 @@ export default function CadastroCompletoForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const data = { ...pessoais, ...entrega };
+
     try {
-      const response = await fetch("/api/cadastro", {
+      // Cadastro
+      let response = await fetch("http://localhost:3000/api/auth/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
+        credentials: "include",
       });
-      if (!response.ok) throw new Error("Erro ao cadastrar");
-      // sucesso!
+      if (!response.ok) {
+        const erro = await response.json();
+        throw new Error(erro.message || "Erro ao cadastrar");
+      }
+
+      // Login automático
+      response = await fetch("http://localhost:3000/api/auth/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: pessoais.email, senha: pessoais.senha }),
+        credentials: "include",
+      });
+      if (!response.ok) {
+        const erro = await response.json();
+        throw new Error(erro.message || "Erro ao logar");
+      }
+
+      // Buscar perfil
+      response = await fetch("http://localhost:3000/api/auth/perfil", {
+        method: "GET",
+        credentials: "include",
+      });
+      const perfil = await response.json();
+      if (!response.ok) {
+        throw new Error(perfil.message || "Erro ao buscar perfil");
+      }
+
+      // Salvar nome no localStorage (ou contexto)
+      localStorage.setItem("usuario_nome", perfil.nome);
+
+      // Redirecionar para home
+      navigate("/");
     } catch (err) {
-      console.error("Erro ao enviar dados:", err);
-      // tratar erro
+      alert(err.message || "Erro ao cadastrar");
     }
   };
 
@@ -79,7 +114,7 @@ export default function CadastroCompletoForm() {
               </div>
               <button
                 type="submit"
-                className="mt-6  h-[48px] w-[670px] flex justify-center text-white text-lg font-semibold bg-[#C92071] rounded-xl p-3 hover:bg-[#991956] transition items-center"
+                className="mt-6  h-[48px] w-[670px] flex justify-center text-white text-lg font-semibold bg-[#C92071] rounded-xl p-3 hover:bg-[#991956] transition items-center cursor-pointer"
               >
                 Criar Conta
               </button>
